@@ -1,6 +1,14 @@
+html {
+    min-width: 100%;
+    min-width: 100%;
+}
+
 body {
     margin: 1rem auto;
     background: white;
+    line-height: 30px;
+    min-width: 100%;
+    min-width: 100%;
 }
 
 header {
@@ -14,6 +22,7 @@ header {
 .titulo {
     position: fixed;
     text-align: right;
+    margin-top: 40px;
 }
 
 .menu {
@@ -37,6 +46,7 @@ h1 {
     padding: 0.9rem;
     margin: 2rem;
     display: inline-block;
+    text-decoration: none;
 }
 
 .link:hover {
@@ -47,7 +57,7 @@ h1 {
 .footer {
     text-align: center;
     font-family: cursive;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 3rem;
     padding: 2rem;
 }
@@ -102,6 +112,7 @@ button {
     padding: 0.5rem;
     right: 100;
     display: inline-block;
+    text-decoration: none;
 }
 
 .link-a:hover{
