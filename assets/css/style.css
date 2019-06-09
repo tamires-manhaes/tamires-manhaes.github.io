@@ -72,17 +72,18 @@ h2 {
 }
 
 .descricao-about-me {
-    padding: 3rem;
+    padding: 2.5rem;
     margin: 3rem;
 }
 
 .descricao-hobbies {
-    padding: 3rem;
-    margin: 3rem;
+    padding: 2.5rem;
+ 
+    margin-top: 30px;
 }
 
 .descricao-habilidades {
-    padding: 3rem;
+    padding: 2.5rem;
     margin: 3rem;
 }
 
