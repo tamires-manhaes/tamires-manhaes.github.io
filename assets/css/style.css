@@ -39,6 +39,8 @@ header{
 }
 
 .titulo {
+    position: relative;
+    top: 80px;
     font-size: 4em;
     font-family: "Permanent Marker", 'Times New Roman', Times, serif;
 	color: black;
@@ -57,6 +59,10 @@ header{
     padding: 10px;
 }
 
+.link:hover {
+    color: lightskyblue;
+}
+
 .link-a {
     position: relative;
     border: 1px, dotted, white;
@@ -65,6 +71,11 @@ header{
     padding: 10px;
     top: 15px;
     left: 700px;
+}
+
+.link-a:hover{
+    color: black;
+    background-color: lightgray;
 }
 
 p {
