@@ -174,20 +174,17 @@ section {
 
 @media screen and (max-width: 330px){
     .home .titulo , .contatos {
-        font-size: 2em;
+        margin-left: 20px;
+        font-size: 5em;
     }
 
     .container .menu {
         opacity: 0;
     }
 
-    .box h2 {
-        font-family: 'Fredoka One', cursive;
-        font-size: 2em;
-    }
     .home .contatos {
         font-size: 2em;
-        margin-left: 10px;
+        margin-right: 10px;
     }
 
     a.link {
@@ -196,13 +193,13 @@ section {
     
     .box h2 {
         font-family: 'Fredoka One', cursive;
-        font-size: 1em;
+        font-size: 2em;
     }
     
     .box p {
         font-family: 'Arvo', serif;
         line-height: 2em;
-        font-size: .7em;
+        font-size: 1em;
     }
     .descricao-experiencias{
         line-height: .1em;
@@ -210,17 +207,17 @@ section {
     
     .descricao-experiencias .titulo_h3{
         font-family: 'Fredoka One', cursive;
-        font-size: .7em;
+        font-size: 1em;
     }
     
     .descricao-experiencias .titulo_h4{
         font-family: 'Fredoka One', cursive;
-        font-size: .7em;
+        font-size: 1em;
     }
     
     .descricao-experiencias .titulo_h5{
         font-family: 'Fredoka One', cursive;
-        font-size: .7em;
+        font-size: 1em;
     }
     
     .footer {
