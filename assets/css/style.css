@@ -170,10 +170,10 @@ section {
     }
 }
 
-@media screen and (max-width: 330px){
+@media screen and (max-width: 350px){
     .home .titulo , .contatos {
         margin-left: 20px;
-        font-size: 5em;
+        font-size: 2em;
     }
 
     .container .menu {
