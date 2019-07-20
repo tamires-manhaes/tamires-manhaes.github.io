@@ -105,9 +105,7 @@ section {
 }
 
 @media screen and (max-width: 960px){
-    .container {
-        background-color: rgba(137, 60, 104, 0.4); 
-    }
+ 
     .home .titulo {
         font-size: 5em;
     }
