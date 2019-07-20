@@ -1,131 +1,106 @@
-*, body{
-	padding: 0px;
-	margin: 0px;
+html, body {
+    padding: 0;
+    margin: auto;
 }
 
-body{
+body {
     font-family: "Montserrat", 'Courier New', Courier, monospace;
 	overflow-x: hidden;
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    font-size: 16px;
 }
 
-section{
-	padding-top: 2%;
-	width: 100%;
-	min-height: 95vh;
-	max-height: 1000px;
-}
-
-header{
-	width: 100%;
-	z-index: 99999;
-	display: block;
-    position: fixed;
-}
-
-.menu {
-    width: 100%; 
+.container .menu {
+    width: 100%;
     height: 50px;
+    position: fixed;
     background-color: black;
-}
-
-.home {
-    position: relative;
-	align-items: center;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.titulo {
-    position: relative;
-    top: 80px;
-    font-size: 4em;
-    font-family: "Permanent Marker", 'Times New Roman', Times, serif;
-	color: black;
-	letter-spacing: 0.1em;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-.link {
-    position: relative;
-    color: gray;
-    font-size: 4em;
-    letter-spacing: 40px;
-	align-items: center;
     text-align: center;
-    padding: 10px;
 }
 
-.link:hover {
-    color: lightskyblue;
+.links{
+    margin-top: 10px;
+    font-family: 'Fredoka One', cursive;
 }
 
 .link-a {
-    position: relative;
-    border: 1px, dotted, white;
-    color: white;
+    margin-left: 30px;
+    color: aliceblue;
     text-decoration: none;
-    padding: 10px;
-    top: 15px;
-    left: 700px;
+    font-size: 1.5em;
 }
 
-.link-a:hover{
+.link-a:hover {
+    color: aquamarine;
+}
+
+.navegacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.home .titulo , .contatos{
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Lobster', cursive;
+    font-size: 5em;
+}
+
+a.link{
+    margin: 0px 30px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 80px 40px;
+}
+
+.contatos .link {
     color: black;
-    background-color: lightgray;
 }
 
-p {
-    font-size: 24px;
-    padding: 40px;
-    line-height: 60px;
+.contatos .link:hover {
+    color: aquamarine;
 }
 
-h2 {
-    font-size: 40px;
-    font-family: "Press Start 2P", 'Times New Roman', Times, serif;
+.box h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 3em;
+}
+
+.box p {
+    font-family: 'Arvo', serif;
+    line-height: 2em;
+    font-size: 1.5em;
+}
+.descricao-experiencias{
+    line-height: .1em;
+}
+
+.descricao-experiencias .titulo_h3{
+    font-family: 'Fredoka One', cursive;
+    font-size: 2em;
+}
+
+.descricao-experiencias .titulo_h4{
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5em;
+}
+
+.descricao-experiencias .titulo_h5{
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.4em;
+}
+
+.footer {
+    font-family: 'Bangers', cursive;
+    font-size: 2em;
     text-align: center;
+    margin-bottom: 10px;
 }
-
-h3 {
-    font-size: 25px;
-    font-family: "Lobster Two", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-h4 {
-    font-size: 20px;
-    font-family: "Righteous" , Arial, Helvetica, sans-serif;
-}
-
-h5 {
-    font-size: 20px;
-    font-family: "Righteous", Arial, Helvetica, sans-serif;
-}
-
-.descricao-habilidades, .footer{
-    position: relative;
-    top: 150px;
-}
-
-.descricao-about-me{
-    position: relative;
-    top: 100px;
-}
-
-.descricao-conhecimentos {
-    position: relative;
-    top: 250px;
-}
-
-h3, h4, h5 {
-    position: relative;
-    left: 50px;
-    top: 20px;
-}
-.footer{ 
-    text-align: center;
-}
-
