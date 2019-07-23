@@ -172,8 +172,7 @@ section {
 
 @media screen and (max-width: 360px){
     .home .titulo , .contatos {
-        margin-left: 20px;
-        font-size: 2.1em;
+        font-size: 1.5em;
     }
 
     .container .menu {
@@ -182,7 +181,7 @@ section {
 
     .home .contatos {
         margin: 0;
-        font-size: 2.2em;
+        font-size: 2em;
     }
 
     a.link {
@@ -191,7 +190,7 @@ section {
     
     .box h2 {
         font-family: 'Fredoka One', cursive;
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
     
     .box p {
