@@ -150,6 +150,12 @@ section {
     text-align: center;
 }
 
+@media screen and (min-width: 1024px) {
+    .home {
+        height: 800px;
+    }
+}
+
 @media screen and (max-width: 960px){
     .home .titulo {
         font-size: 5em;
