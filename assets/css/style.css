@@ -30,17 +30,19 @@ section img {
 
 .links{
     margin: 10px 0;
-    font-family: 'Annie Use Your Telescope', cursive;
+    font-family: 'Lexend Deca', sans-serif;
     font-weight: 800;
 }
 
 .link-a {
+    display: inline-flex;
+    align-items: center;
     margin-left: 30px;
     padding: 5px;
     color:#fff;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .link-a:hover {
@@ -61,14 +63,28 @@ section img {
 }
 
 .home .titulo , .contatos{
+    margin: 0 auto;
     display: inline-flex;
     justify-content: center;
     align-content: center;
     font-family: 'Shadows Into Light Two', cursive;
     font-weight: 900;
-    font-size: 6em;
+    font-size: 3em;
     color: #fff;
     z-index: 8;
+}
+
+.home .titulo {
+    font-size: 7em;
+}
+
+.home .subtitulo {
+    z-index: 8;
+    display: inline-flex;   
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+    font-size: 2.5em;   
 }
 .titulo-img {
     display: flex;
@@ -84,7 +100,7 @@ section img {
 
 a.link{
     font-weight: 300;
-    margin: 0px 30px;
+    margin: 0px 15px;
 }
 
 section {
@@ -115,14 +131,14 @@ section {
 }
 
 .box h2 {
-    font-family: 'Aladin', cursive;
+    font-family: 'Lexend Deca', sans-serif;
     font-size: 3em;
 }
 
 .box p {
-    font-family: 'Shadows Into Light Two', cursive;
+    font-family: 'Roboto Mono', monospace;
     letter-spacing: 1px;
-    line-height: 2em;
+    line-height: 1.7em;
     font-size: 1.5em;
 }
 .descricao-experiencias{
@@ -130,22 +146,22 @@ section {
 }
 
 .descricao-experiencias .titulo_h3{
-    font-family: 'Sue Ellen Francisco', cursive;
-    font-size: 1.7em;
-}
-
-.descricao-experiencias .titulo_h4{
-    font-family: 'Sue Ellen Francisco', cursive;
+    font-family: 'Lexend Deca', sans-serif;
     font-size: 1.5em;
 }
 
+.descricao-experiencias .titulo_h4{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1em;
+}
+
 .descricao-experiencias .titulo_h5{
-    font-family: 'Sue Ellen Francisco', cursive;
-    font-size: 1.4em;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: .80em;
 }
 
 .footer {
-    font-family: 'Sue Ellen Francisco', cursive;
+    font-family: 'Lexend Deca', sans-serif;
     font-size: 2em;
     text-align: center;
 }
@@ -236,7 +252,7 @@ section {
         opacity: 0;
     }
 
-    .home{
+    .home {
         height: 420px;
     }
 
