@@ -59,6 +59,7 @@ section img {
 }
 
 .home {
+    margin: 0;
     height: 650px;
 }
 
@@ -138,11 +139,11 @@ section {
 .box p {
     font-family: 'Roboto Mono', monospace;
     letter-spacing: 1px;
-    line-height: 1.7em;
-    font-size: 1.5em;
+    line-height: 1.5em;
+    font-size: 1.2em;
 }
 .descricao-experiencias{
-    line-height: .1em;
+    line-height: 0em;
 }
 
 .descricao-experiencias .titulo_h3{
@@ -182,7 +183,19 @@ section {
     }
 }
 
+@media screen and (max-width: 992px){
+
+}
+
 @media screen and (max-width: 767px){
+    .menu {
+        display: none;
+    }
+
+    .home {
+        margin: 0;
+    }
+
     .link-a {
         font-size: 1em;
     }
