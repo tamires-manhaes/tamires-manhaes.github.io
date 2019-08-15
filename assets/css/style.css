@@ -182,7 +182,7 @@ section {
     }
 }
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 767px){
     .link-a {
         font-size: 1em;
     }
@@ -192,13 +192,21 @@ section {
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 480px){
+    .home {
+        margin: 0;
+    }
+
     .home .titulo {
         font-size: 3.5em;
     }
 
     .home .titulo , .contatos {
         font-size: 3em;
+    }
+
+    .home .subtitulo {
+        font-size: 2em;
     }
 
     .container .menu {
@@ -248,17 +256,21 @@ section {
         font-size: 2.5em;
     }
 
+    .home .subtitulo {
+        font-size: 1.5em;
+    }
+
     .container .menu {
         opacity: 0;
     }
 
     .home {
-        height: 420px;
+        height: 500px;
     }
 
     .home .contatos {
         margin: 0;
-        font-size: 3em;
+        font-size: 2em;
     }
 
     a.link {
@@ -302,7 +314,7 @@ section {
     
     .descricao-experiencias .titulo_h5 {
 
-        font-size: 1em;
+        font-size: .80em;
     }
     
     .footer {
