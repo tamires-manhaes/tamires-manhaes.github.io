@@ -18,7 +18,24 @@ section img {
     position: fixed;
     z-index: 1;
 }
+#hero{
+    background: #fff;
+    border: 1px solid #dedede;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    z-index: 9;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 10px;
+    right: 10px;
+}
 
+.fa-angle-up{
+    color: #000;
+}
 .container .menu {
     width: 100%;
     height: 60px;
@@ -26,6 +43,7 @@ section img {
     background-color: rgb(255, 193, 0);
     text-align: center;
     z-index: 9;
+    display: none;
 }
 
 .links{
@@ -60,7 +78,7 @@ section img {
 
 .home {
     margin: 0;
-    height: 650px;
+    height: 550px;
 }
 
 .home .titulo , .contatos{
@@ -76,7 +94,7 @@ section img {
 }
 
 .home .titulo {
-    font-size: 7em;
+    font-size: 2em;
 }
 
 .home .subtitulo {
@@ -85,7 +103,7 @@ section img {
     justify-content: center;
     align-content: center;
     color: #fff;
-    font-size: 2.5em;   
+    font-size: 1.8rem;   
 }
 .titulo-img {
     display: flex;
@@ -100,6 +118,7 @@ section img {
     opacity: 1;
     width: 180px;
     border-radius: 90px;
+    display:none;
 }
 
 a.link{
@@ -113,13 +132,28 @@ section {
     justify-content: center;
     align-content: center;
 }
-
-.contatos{
+.home .contatos {
     z-index: 8;
+    display: none;
+}
+.nav-hamburguer .contatos{
+    z-index: 8;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color:#000;
+    position: absolute;
+    bottom: 50%;
+    left: 30px;
+}
+
+.nav-hamburguer .contatos .link{
+    color: #000;
 }
 
 .contatos .link {
     color: #fff;
+    width: 25px;
 }
 
 .contatos .link:hover {
@@ -129,7 +163,7 @@ section {
 
 .box {
     position: relative;
-    padding: 50px;
+    padding: 20px;
     z-index: 8;
     background: #000;
     color: #fff;
@@ -138,14 +172,15 @@ section {
 
 .box h2 {
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 3em;
+    font-size: 1.8rem;
+    margin: 20px 0 10px;
 }
 
 .box p {
     font-family: 'Roboto Mono', monospace;
     letter-spacing: 1px;
-    line-height: 1.5em;
-    font-size: 1.2em;
+    line-height: 1.3em;
+    font-size: 1rem;
 }
 .descricao-experiencias{
     line-height: 0em;
@@ -154,16 +189,19 @@ section {
 .descricao-experiencias .titulo_h3{
     font-family: 'Lexend Deca', sans-serif;
     font-size: 1.5em;
+    margin: 30px 0 10px;
 }
 
 .descricao-experiencias .titulo_h4{
     font-family: 'Lexend Deca', sans-serif;
     font-size: 1em;
+    margin: 20px 0 10px;
 }
 
 .descricao-experiencias .titulo_h5{
     font-family: 'Lexend Deca', sans-serif;
     font-size: .80em;
+    margin: 20px 0 10px;
 }
 
 .footer {
@@ -172,175 +210,88 @@ section {
     text-align: center;
 }
 
-@media screen and (min-width: 1024px) {
-    .home {
-        height: 800px;
-    }
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media screen and (max-width: 960px){
-    .home .titulo {
-        font-size: 5em;
-    }
-
-    section {
-        margin: 20px 40px;
-    }
+body {
+    background: #81ecec;
 }
 
-@media screen and (max-width: 992px){
-
+.hamburguer-menu {
+    background: rgb(255, 193, 0);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    display: block;
+    z-index: 9999;
 }
 
-@media screen and (max-width: 767px){
-    .menu {
-        display: none;
-    }
-
-    .home {
-        margin: 0;
-    }
-
-    .link-a {
-        font-size: 1em;
-    }
-
-    section {
-        margin: 50px 40px;
-    }
+.hamburguer {
+    position: relative;
+    display: block;
+    background: #fff;
+    width: 25px;
+    height: 2px;
+    top: 25px;
+    left: 12px;
+    transition: .5s ease-in-out;
 }
 
-@media screen and (max-width: 480px){
-    .home {
-        margin: 0;
-    }
-
-    .home .titulo {
-        font-size: 3.5em;
-    }
-
-    .home .titulo , .contatos {
-        font-size: 3em;
-    }
-
-    .home .subtitulo {
-        font-size: 2em;
-    }
-
-    .container .menu {
-        opacity: 0;
-    }
-
-    .titulo-img img {
-        display: none;
-    }
-
-    .box h2 {
-        font-size: 2em;
-    }
-    
-    .box p {
-        line-height: 2em;
-        font-size: 1em;
-    }
-    .descricao-experiencias{
-        line-height: .1em;
-    }
-    
-    .descricao-experiencias .titulo_h3{
-        font-size: 1em;
-    }
-    
-    .descricao-experiencias .titulo_h4{
-        font-size: 1em;
-    }
-    
-    .descricao-experiencias .titulo_h5{
-        font-size: 1em;
-    }
-    
-    .footer {
-        font-size: 1.1em;
-        text-align: center;
-    }
-
-    section {
-        margin: 50px 20px;
-    }
+.hamburguer:before,
+.hamburguer:after {
+    background: #fff;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .5s ease-in-out;
 }
 
-@media screen and (max-width: 360px){
-    .home .titulo , .contatos {
-        font-size: 2.5em;
-    }
+.hamburguer:before {
+    top: -10px;
+}
 
-    .home .subtitulo {
-        font-size: 1.5em;
-    }
+.hamburguer:after {
+    bottom: -10px;
+}
 
-    .container .menu {
-        opacity: 0;
-    }
+input {
+    display: none;
+}
 
-    .home {
-        height: 500px;
-    }
+input:checked ~ label .hamburguer {
+    transform: rotate(45deg);
+}
 
-    .home .contatos {
-        margin: 0;
-        font-size: 2em;
-    }
+input:checked ~ label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+}
 
-    a.link {
-        margin: 0px 10px;
-    }
+input:checked ~ label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
 
-    .box {
-        padding: 40px;
-    }
-    
-    .box h2 {
-        font-size: 1.7em;
-    }
-    
-    .box p {
-        line-height: 2em;
-        font-size: 1em;
-	    text-align: center;
-    }
+input:checked ~ .nav-hamburguer{
+    display: block;
+    z-index: 9;
+}
 
-    .titulo-img {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .titulo-img img {
-        width: 100px;
-    }
-	
-    .descricao-experiencias{
-        line-height: .1em;
-    }
-    
-    .descricao-experiencias .titulo_h3 {
-        font-size: 1em;
-    }
-    
-    .descricao-experiencias .titulo_h4 {
-        font-size: 1em;
-    }
-    
-    .descricao-experiencias .titulo_h5 {
-
-        font-size: .80em;
-    }
-    
-    .footer {
-        font-size: 1.1em;
-        text-align: center;
-    }
-
-    section {
-        margin: 20px 0px;
-    }
+.nav-hamburguer{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display:none;
+    color: #000;
 }

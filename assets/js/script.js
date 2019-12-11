@@ -10,5 +10,9 @@ animation.fromTo(titulo, 2, {x: "-50%"}, {x: "0%"}, Power2.easeInOut);
 animation.fromTo(subtitulo, 2,{x: "50%"}, {x: "0%"}, Power2.easeInOut);
 animation.fromTo(contatos, 2, {x: "-50%"}, {x: "0%"}, Power2.easeInOut);
 
-
-$(".box").scroll(function(){ alert("acroll"); })
+$(document).ready(function(){
+    $("#hero").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+      });
+});
