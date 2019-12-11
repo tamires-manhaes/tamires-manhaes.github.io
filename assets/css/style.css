@@ -79,7 +79,8 @@ section img {
 
 .home {
     margin: 0;
-    height: 550px;
+    height: 600px;
+    width: 100%;
 }
 
 .home .titulo , .contatos{
