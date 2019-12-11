@@ -18,6 +18,7 @@ body {
 section img {
     position: fixed;
     z-index: 1;
+    overflow-x: hidden;
 }
 #hero{
     background: #fff;
