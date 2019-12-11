@@ -1,12 +1,12 @@
 html, body {
     padding: 0;
     margin: auto;
-    overflow: hidden;
+    
 }
 
 body {
     font-family: "Montserrat", 'Courier New', Courier, monospace;
-	overflow-x: hidden;
+	overflow: hidden;
     scroll-behavior: smooth;
     font-size: 16px;
 }
