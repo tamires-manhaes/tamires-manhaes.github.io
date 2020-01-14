@@ -46,12 +46,17 @@
     }
 }
 @media only screen and (min-width: 1025px){
+
+    .section img {
+        object-fit: none;
+        height: auto;
+    }
     .home .titulo {
-        font-size: 9rem !important;
+        font-size: 5.75rem !important;
     }
 
     .home .subtitulo {
-        font-size: 5rem !important;
+        font-size: 3.75rem !important;
     }
 
     .box{
@@ -63,7 +68,7 @@
     }
 
     .box p {
-        font-size: 1.5rem !important;
+        font-size: 1.2rem !important;
     }
 }
 

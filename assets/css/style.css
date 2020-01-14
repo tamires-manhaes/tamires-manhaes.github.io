@@ -17,9 +17,10 @@ body {
 section img {
     position: fixed;
     z-index: 1;
+
 }
 #hero{
-    background: #fff;
+    background: rgb(255, 193, 0);
     border: 1px solid #dedede;
     width: 40px;
     height: 40px;
@@ -31,11 +32,24 @@ section img {
     justify-content: center;
     bottom: 10px;
     right: 10px;
+    text-decoration: none;
+    transition: background 350ms ease;
+}
+
+#hero:hover {
+    background: #fff;
 }
 
 .fa-angle-up{
+    color: #fff;
+    box-shadow: rgba(255,255,255, .5);
+    transiton: color 350ms ease;
+}
+
+#hero:hover .fa-angle-up{
     color: #000;
 }
+
 .container .menu {
     width: 100%;
     height: 60px;
@@ -90,7 +104,7 @@ section img {
     font-family: 'Shadows Into Light Two', cursive;
     font-weight: 900;
     font-size: 3em;
-    color: #fff;
+    color: #000;
     z-index: 8;
 }
 
@@ -103,7 +117,7 @@ section img {
     display: inline-flex;   
     justify-content: center;
     align-content: center;
-    color: #fff;
+    color: #000;
     font-size: 1.8rem;   
 }
 .titulo-img {
@@ -146,6 +160,11 @@ section {
     position: absolute;
     bottom: 50%;
     left: 30px;
+    margin: 0 auto;
+}
+
+.nav-hamburguer li{
+    list-style: none;
 }
 
 .nav-hamburguer .contatos .link{
@@ -153,8 +172,7 @@ section {
 }
 
 .contatos .link {
-    color: #fff;
-    width: 25px;
+    color: #000;
 }
 
 .contatos .link:hover {
@@ -220,7 +238,7 @@ section {
 }
 
 body {
-    background: #81ecec;
+    background: #fff;
 }
 
 .hamburguer-menu {
