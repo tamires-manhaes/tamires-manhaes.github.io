@@ -9,12 +9,14 @@
     <meta name="p:domain_verify" content="14df817ca16a169945d49f32c8026a20" />
     <meta author="Tamires Manhães">
     <meta name=" theme-color" content="rgb(255, 193, 0)">
+    <link rel="icon" href="assets/img/favicon.png" />
 
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Roboto+Mono|Shadows+Into+Light+Two&display=swap" rel="stylesheet"> 
     <title>Tamires Manhães</title>
 
@@ -100,42 +102,57 @@
                 <div id="experiencias"></div>
                 <section class="descricao-experiencias box box-2">
                     <h2>Experiências</h2>
-                    <h3 class="titulo_h3">IWWA Digital</h3>
-                    <h4 class="titulo_h4">06/2019 - Presente</h4>
-                    <h5 class="titulo_h5">Estágio Desenvolvimento Web </h5>
-                    <p class="p_experiencia">
-                        Atualmente sou estagiária na IWWA, onde estou aprendendo sobre de desenvolvimento web full stack
-                        utilizando PHP e Wordpress para o back-end , Sass, Angular, Gulp para o desenvolvimento e manutenção dos sites.
-                        com objetivo de me tornar uma desenvolvedora web full stack.
-                    </p>
-
-                    <h3 class="titulo_h3">2B Educação</h3>
-                    <h4 class="titulo_h4">05/2019 - 06/2019</h4>
-                    <h5 class="titulo_h5"> Estágio Desenvolvimento Web</h5>
-                    <p class="p_experiencia">
-                        Fui estagiária na 2B , onde auxiliei na manutenção do site, criei layouts,
-                        além de auxílio fazendo consultas SQL e dando suporte ás demandas internas da empresa.
-                    </p>
-
-                    <h3 class="titulo_h3">Capegmini</h3>
-                    <h4 class="titulo_h4">02/2019 - 05/2019</h4>
-                    <h5 class="titulo_h5">Programador I</h5>
-                    <p class="p_experiencia">
-                        Ao fim do Programa de Qualificação participei de um outro treinamento, onde aprendi a
-                        trabalhar com o ambiente SAP e a programar em ABAP. Ao fim desse
-                        treinamento eu fui alocada para atividades em produção, criando rotinas e fazendo
-                        mmanutenção em rotinas já implementadas em ABAP.
-                    </p>
-
-                    <h3 class="titulo_h3">Capegmini</h3>
-                    <h4 class="titulo_h4">12/2018 - 02/2019</h4>
-                    <h5 class="titulo_h5">Trainee</h5>
-                    <p>
-                        Participei de um Programa de Qualificação e Treinamento para imersão de mulheres no mercado
-                        de TI, onde aprendi a programar em Java, aprendi os
-                        conceitos básicos de Banco de Dados e aprendi sobre Padrões de Projetos e boas práticas de
-                        programação.
-                    </p>
+                     <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <h3 class="titulo_h3">IWWA Digital</h3>
+                                <h4 class="titulo_h4">06/2019 - Presente</h4>
+                                <h5 class="titulo_h5">Estágio Desenvolvimento Web </h5>
+                                <p class="p_experiencia">
+                                    Atualmente sou estagiária na IWWA, onde estou aprendendo sobre de desenvolvimento web full stack
+                                    utilizando PHP e Wordpress para o back-end , Sass, Angular, Gulp para o desenvolvimento e manutenção dos sites.
+                                    com objetivo de me tornar uma desenvolvedora web full stack.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h3 class="titulo_h3">2B Educação</h3>
+                                <h4 class="titulo_h4">05/2019 - 06/2019</h4>
+                                <h5 class="titulo_h5"> Estágio Desenvolvimento Web</h5>
+                                <p class="p_experiencia">
+                                    Fui estagiária na 2B , onde auxiliei na manutenção do site, criei layouts,
+                                    além de auxílio fazendo consultas SQL e dando suporte ás demandas internas da empresa.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h3 class="titulo_h3">Capegmini</h3>
+                                <h4 class="titulo_h4">02/2019 - 05/2019</h4>
+                                <h5 class="titulo_h5">Programador I</h5>
+                                <p class="p_experiencia">
+                                    Ao fim do Programa de Qualificação participei de um outro treinamento, onde aprendi a
+                                    trabalhar com o ambiente SAP e a programar em ABAP. Ao fim desse
+                                    treinamento eu fui alocada para atividades em produção, criando rotinas e fazendo
+                                    mmanutenção em rotinas já implementadas em ABAP.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <h3 class="titulo_h3">Capegmini</h3>
+                                <h4 class="titulo_h4">12/2018 - 02/2019</h4>
+                                <h5 class="titulo_h5">Trainee</h5>
+                                <p>
+                                    Participei de um Programa de Qualificação e Treinamento para imersão de mulheres no mercado
+                                    de TI, onde aprendi a programar em Java, aprendi os
+                                    conceitos básicos de Banco de Dados e aprendi sobre Padrões de Projetos e boas práticas de
+                                    programação.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
                 </section>
 
                 <div class="div-vazia"></div>
@@ -143,11 +160,22 @@
                 <div id="conhecimentos"></div>
                 <section class="descricao-conhecimentos box box-3">
                     <h2>Conhecimentos Técnicas</h2>
-                    <p>
-                        Meu inglês é intermediário, minha lógica de programação é um trabalho em progresso, conheci a linguagem C 
-                        além de um 'printf' e um 'for', consigo trabalhar com o básico de Java Orientado a Objetos, atualmente tenho
-                        utilizado Wordpress e PHP para desenvolvimento de sites e LPs, fiz esse portifólio com HTML e CSS .
-                    </p>
+                    <ul class="conhecimentos">
+                        <li><strong>Inglês:</strong> Intermediário</li>
+                        <li><strong>Lógica de Programação:</strong> Intermediário</li>
+                        <li><strong>Linguagem C:</strong> Intermediário</li>
+                        <li><strong>Java:</strong> Básico</li>
+                        <li><strong>PHP:</strong> Básico</li>
+                        <li><strong>Wordpress:</strong> Intermediário</li>
+                        <li><strong>HTML:</strong> Intermediário</li>
+                        <li><strong>CSS/ SASS:</strong> Intermediário</li>
+                        <li><strong>JavaScript:</strong> Intermediário</li>
+                        <li><strong>JQuery:</strong> Intermediário</li>
+                        <li><strong>NodeJS:</strong> Básico</li>
+                        <li><strong>ReactJS:</strong> Básico</li>
+                        <li><strong>React Native:</strong> Básico</li>
+                        
+                    </ul>
                 </section>
 
                 <div id="habilidades"></div>
@@ -174,6 +202,7 @@
     <script src="/assets/js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="/assets/js/script.js"></script>
 </body>
 </html>
