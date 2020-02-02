@@ -54,6 +54,14 @@ section img {
     color: #000;
 }
 
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1300px;
+    position: relative;
+    overflow: hidden;
+}
+
 .container .menu {
     width: 100%;
     height: 60px;
