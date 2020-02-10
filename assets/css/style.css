@@ -59,7 +59,7 @@ section img {
     padding: 0 15px;
     max-width: 1300px;
     position: relative;
-    overflow: hidden;
+    width: 100%;
 }
 
  .menu {
