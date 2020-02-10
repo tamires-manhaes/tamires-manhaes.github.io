@@ -33,7 +33,7 @@
     }
     
     .box .conhecimentos li {
-        width: calc(100% / 3 - 10px) !important;
+        width: calc(100% / 2 - 10px) !important;
     }
 
 }
@@ -44,6 +44,10 @@
     
     .home .titulo, .contatos{
         font-size: 3rem;
+    }
+    
+    .box .conhecimentos li {
+        width: calc(100% / 3 - 10px) !important;
     }
 }
 @media only screen and (min-width: 1025px){
