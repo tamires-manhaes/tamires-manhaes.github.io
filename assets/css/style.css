@@ -47,7 +47,7 @@ section img {
 .fa-angle-up{
     color: #fff;
     box-shadow: rgba(255,255,255, .5);
-    transiton: color 350ms ease;
+    transition: color 350ms ease;
 }
 
 #hero:hover .fa-angle-up{
