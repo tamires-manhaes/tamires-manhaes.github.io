@@ -71,6 +71,7 @@ section img {
     align-items: center;
     justify-content: center;
     background: rgb(255, 193, 0);
+     display:none;
 }
 
 .links{
@@ -170,10 +171,11 @@ section {
     justify-content: center;
     align-content: center;
 }
+/*
 .home .contatos {
     z-index: 8;
     display: none;
-}
+} */
 
 .contatos .link {
     color: #fff;
