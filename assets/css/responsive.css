@@ -43,7 +43,7 @@
     }
     
     .home{
-        height: 600px;
+        height: 600px !important;
     }
     
     .home .titulo, .contatos{
