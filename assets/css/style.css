@@ -3,7 +3,7 @@ html, body {
     margin: auto;
     
 }
-
+.hoe
 body {
     font-family: "Montserrat", 'Courier New', Courier, monospace;
     scroll-behavior: smooth;
@@ -126,7 +126,7 @@ section img {
     align-content: center;
     font-family: 'Shadows Into Light Two', cursive;
     font-weight: 900;
-    font-size: 3em;
+    font-size: 2em;
     color: #fff;
     z-index: 8;
 }
@@ -173,25 +173,6 @@ section {
 .home .contatos {
     z-index: 8;
     display: none;
-}
-.nav-hamburguer .contatos{
-    z-index: 8;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    color:#000;
-    position: absolute;
-    bottom: 50%;
-    left: 30px;
-    margin: 0 auto;
-}
-
-.nav-hamburguer li{
-    list-style: none;
-}
-
-.nav-hamburguer .contatos .link{
-    color: #000;
 }
 
 .contatos .link {
