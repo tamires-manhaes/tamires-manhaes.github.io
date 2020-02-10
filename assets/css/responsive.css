@@ -33,7 +33,7 @@
     }
     
     .box .conhecimentos li {
-        width: calc(100% / 3 - 10px)
+        width: calc(100% / 3 - 10px) !important;
     }
 
 }
