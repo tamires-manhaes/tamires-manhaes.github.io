@@ -24,4 +24,11 @@ jQuery( document ).ready(function() {
         event.preventDefault();
         jQuery('html, body').animate({ scrollTop: jQuery(jQuery(this).attr('href')).offset().top }, 600);
     });
+
 });
+
+var date = new Date();
+var year = date.getFullYear();
+var yearOld = year - 1998;
+
+jQuery('.sobre-mim .descricao span').html(yearOld);
