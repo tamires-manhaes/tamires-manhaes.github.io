@@ -76,7 +76,7 @@ span{
 }
 
 @media (min-width: 1024px){
-  .descricao{font-size:1rem}
+  .descricao{font-size:1.2rem}
 }
 
 #hero{
