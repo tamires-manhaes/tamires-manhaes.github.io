@@ -1,7 +1,7 @@
 {
   "name": "tamires-manhaes.github.io",
   "version": "2.0.0",
-  "description": "",
+  "description": "Personal website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,13 +16,5 @@
   "bugs": {
     "url": "https://github.com/tamires-manhaes/tamires-manhaes.github.io/issues"
   },
-  "homepage": "https://github.com/tamires-manhaes/tamires-manhaes.github.io#readme",
-  "dependencies": {},
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-cssnano": "^2.1.3",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5"
-  }
+  "homepage": "https://github.com/tamires-manhaes/tamires-manhaes.github.io#readme"
 }
