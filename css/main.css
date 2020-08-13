@@ -160,7 +160,7 @@ span{
 
 .menu-top .nav-top .menu .item a:hover:after{width:100%}
 .menu-top .home{
-  height:50vh;
+  height:75vh;
   position:relative;
   z-index:1;
   padding:0 15px;
@@ -170,18 +170,20 @@ span{
   flex-direction:column
 }
 
-@media (min-width: 1024px){
-  .menu-top .home{height:68vh}
-}
 
 .menu-top .home .img{
-  width:100px;
-  height:100px;
+  width:150px;
+  height:150px;
   border:1px solid #fff;
   border-radius:50%;
 }
 
-@media (min-width: 1024px){.menu-top .home .img{width:150px;height:150px}}
+@media (min-width: 1024px){
+  .menu-top .home .img{
+    width:200px;
+    height:200px;
+  }
+}
 
 .menu-top .home .img img{
   position:relative;
@@ -195,7 +197,11 @@ span{
   font-size:2.15rem
 }
 
-@media (min-width: 768px){.menu-top .home .nome{font-size:3rem}}
+@media (min-width: 768px){
+  .menu-top .home .nome{
+    font-size:3rem
+  }
+}
 @media (min-width: 1024px){.menu-top .home .nome{font-size:4rem}}
 
 .menu-top .home .descricao{
@@ -267,7 +273,7 @@ main{
 .conhecimentos .conhecimentos-list{
   display:flex;
   flex-wrap:wrap;
-  flex-direction:column;
+  /* flex-direction:column; */
   align-items:center;
   justify-content: center;
   margin:15px 0;
@@ -276,7 +282,7 @@ main{
 @media (min-width: 1024px){.conhecimentos .conhecimentos-list{flex-direction:row}}
 
 .conhecimentos .conhecimentos-list .conhecimento-item{
-  width:calc(100% - 30px);
+  width:calc(100% - 10px);
   height: 50px;
   margin:5px auto;
   border: 1px solid #fff;
@@ -301,27 +307,31 @@ main{
   color: #000;
 }
 
-@media (min-width: 1024px){
+@media (min-width: 767px){
   .conhecimentos .conhecimentos-list .conhecimento-item{
     width:calc(100% / 2 - 25px);
     margin:5px;
   }
 }
 
-.conhecimentos .conhecimentos-list .conhecimento-item span{font-size:1.2rem}
-.conhecimentos .conhecimentos-list .conhecimento-item span strong{font-size:1.2rem}
+
+
+.conhecimentos .conhecimentos-list .conhecimento-item span{font-size:1.1rem}
+.conhecimentos .conhecimentos-list .conhecimento-item span strong{font-size:1.1rem}
 
 .projetos .projects-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  margin: 20px auto 10px;
 }
 
 
 
 .projetos .projects-list .projects-item {
   width: calc(100%  - 20px);
-  min-height: 180px;
+  min-height: 200px;
   border: 1px solid #fff;
   margin: 10px;
   padding: 10px;
@@ -330,12 +340,16 @@ main{
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
-@media (min-width: 992px){
+@media (min-width: 767px){
   .projetos .projects-list .projects-item {
     width: calc(100% / 2 - 20px);
+  }
+
+  .projetos .projects-list .projects-item button{
+    min-width: 150px;
   }
 }
 
@@ -354,12 +368,25 @@ main{
   flex-direction: row;
 }
 .projetos .projects-list .projects-item button {
-  border: 1px solid #fff;
-  background: #000000;
-  padding: 10px;
+  height: 50px;
+  min-width: 100px;
+  padding: 5px;
   margin: 0 5px;
+  background: #000000;
+  border: 1px solid #fff;
   border-radius: 5px;
+  cursor: pointer;
   transition: all 350ms ease;
+}
+
+.projetos .projects-list .projects-item button a {
+  font-weight: bold;
+}
+
+@media (min-width: 540px){
+  .projetos .projects-list .projects-item button{
+    min-width: 150px;
+  }
 }
 
 .projetos .projects-list .projects-item button:hover{
