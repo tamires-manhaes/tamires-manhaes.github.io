@@ -4,6 +4,7 @@
   "description": "Personal website",
   "main": "index.js",
   "scripts": {
+    "server": "live-server .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
