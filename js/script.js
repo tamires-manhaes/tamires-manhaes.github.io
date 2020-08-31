@@ -21,11 +21,12 @@ animation.fromTo(habilidades , 3, {opacity: "0"}, {opacity: "1"}, Power2.easeIn)
             $("html, body").animate({ scrollTop: 0 }, 600);
         });
 
-        $( 'scroll' ).click(function( event ) {
-            event.preventDefault();
-            $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 600);
-        });
-    
+        // $( 'scroll' ).click(function() {
+        //     // $("html, body").animate({ scrollTop: 0 }, 600);
+        //     $('html, body').animate({
+        //       scrollTop: $(hash).offset().top
+        //     }, 800)
+        // });
     });
     
     var date = new Date();

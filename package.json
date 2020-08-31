@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/tamires-manhaes/tamires-manhaes.github.io/issues"
   },
-  "homepage": "https://github.com/tamires-manhaes/tamires-manhaes.github.io#readme"
+  "homepage": "https://github.com/tamires-manhaes/tamires-manhaes.github.io#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
 }
