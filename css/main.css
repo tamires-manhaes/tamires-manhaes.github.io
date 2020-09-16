@@ -300,6 +300,10 @@ main{
   transition: all 350ms ease;
 }
 
+.conhecimentos .conhecimentos-list .conhecimento-item:hover{
+  background: #000;
+}
+
 .conhecimentos .conhecimentos-list .conhecimento-item span {
   display: flex;
   flex-direction: row;
@@ -313,14 +317,14 @@ main{
   color: #000;
 }
 
-.conhecimentos .conhecimentos-list .conhecimento-item img {
-  width: 35px;
-  height: 35px;
+.conhecimentos .conhecimentos-list .conhecimento-item i {
+  font-size: 3rem;
+  color: #000;
   margin-right: 10px;
 }
 
-.conhecimentos .conhecimentos-list .conhecimento-item:hover {
-  background: #000;
+.conhecimentos .conhecimentos-list .conhecimento-item:hover i {
+  color: #fff;
 } 
 
 .conhecimentos .conhecimentos-list .conhecimento-item:hover span,
@@ -335,10 +339,8 @@ main{
   }
 }
 
-
-
-.conhecimentos .conhecimentos-list .conhecimento-item span{font-size:1.1rem}
-.conhecimentos .conhecimentos-list .conhecimento-item span strong{font-size:1.1rem}
+.conhecimentos .conhecimentos-list .conhecimento-item span{ font-size:1.1rem }
+.conhecimentos .conhecimentos-list .conhecimento-item span strong{ font-size:1.1rem} 
 
 .projetos .projects-list {
   display: flex;
@@ -347,7 +349,6 @@ main{
   justify-content: center;
   margin: 20px auto 10px;
 }
-
 
 
 .projetos .projects-list .projects-item {
@@ -388,6 +389,10 @@ main{
   justify-content: center;
   flex-direction: row;
 }
+
+.projetos .projects-list .projects-item .links-group i {
+  font-size: 1.5rem;
+}
 .projetos .projects-list .projects-item button {
   height: 50px;
   min-width: 150px;
@@ -402,10 +407,9 @@ main{
 
 .projetos .projects-list .projects-item button a {
   font-weight: bold;
-}
-
-.projetos .projects-list .projects-item button .fa-github {
-  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 @media (min-width: 540px){
@@ -422,6 +426,6 @@ main{
   color: #000;
 }
 
-.projetos .projects-list .projects-item button:hover .fa-github {
+.projetos .projects-list .projects-item button:hover i {
   color: #000;
 }
