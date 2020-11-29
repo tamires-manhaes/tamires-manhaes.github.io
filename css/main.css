@@ -242,7 +242,7 @@ span{
 }
 @media(min-width: 1024px){
   .menu-top .home {
-    height: 60vh;
+    height: 55vh;
   }
 }
 
@@ -256,15 +256,15 @@ span{
 
 @media (min-width: 1024px){
   .menu-top .home .img{
-    width:300px;
-    height:300px;
+    width:250px;
+    height:250px;
   }
 }
 
 @media(min-width: 1250px){
   .menu-top .home .img{
-    width:350px;
-    height:350px;
+    width:300px;
+    height:300px;
   }
 }
 
@@ -457,17 +457,17 @@ main{
     font-size: 1.8rem;
   }
   .projetos .projects-item .descricao{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 
 
 @media(min-width: 1024px){
   .projetos .descricao{
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .projetos .projects-item .descricao{
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
@@ -488,21 +488,26 @@ main{
   margin: 10px;
   padding: 10px;
   border-radius: 15px;
-
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-@media (min-width: 767px){
+@media(min-width: 720px){
+  .projetos .projects-list .projects-item {
+    width: calc(100% / 2 - 20px);
+  }
+}
+
+@media (min-width: 1024px){
   .projetos .projects-list .projects-item {
     width: calc(100% / 3 - 20px);
   }
 
-  .projetos .projects-list .projects-item button{
+  /* .projetos .projects-list .projects-item button{
     min-width: 200px;
-  }
+  } */
 }
 
 .projetos .projects-list .projects-item .titulo {
@@ -518,6 +523,8 @@ main{
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  width: 100%;
+  margin-top: 5px;
 }
 
 .projetos .projects-list .projects-item .links-group i {
@@ -526,7 +533,7 @@ main{
 
 .projetos .projects-list .projects-item button {
   height: 50px;
-  min-width: 100px;
+  width: calc(100% / 2 - 15px);
   padding: 5px;
   margin: 0 5px;
   background:transparent;
@@ -541,14 +548,14 @@ main{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  font-size: .9rem;
+  font-size: .7rem;
 }
 
-@media (min-width: 540px){
+/* @media (min-width: 540px){
   .projetos .projects-list .projects-item button{
     min-width: 170px;
   }
-}
+} */
 
 .projetos .projects-list .projects-item button:hover{
   background: #fff;
