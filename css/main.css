@@ -435,7 +435,7 @@ main{
 
 @media (min-width: 767px){
   .conhecimentos .conhecimentos-list .conhecimento-item{
-    width:calc(100% / 2 - 25px);
+    width:calc(100% / 3 - 25px);
     margin:5px;
   }
 }
@@ -497,7 +497,7 @@ main{
 
 @media (min-width: 767px){
   .projetos .projects-list .projects-item {
-    width: calc(100% / 2 - 20px);
+    width: calc(100% / 3 - 20px);
   }
 
   .projetos .projects-list .projects-item button{
