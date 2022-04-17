@@ -553,7 +553,7 @@ main {
 }
 
 .projetos .projects-list .projects-item .titulo {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .projetos .projects-list .projects-item .descricao {
@@ -574,10 +574,10 @@ main {
 }
 
 .projetos .projects-list .projects-item button {
-  height: 50px;
-  width: calc(100% / 2 - 15px);
+  height: 40px;
+  width: calc(100% / 2 - 5px);
   padding: 5px;
-  margin: 0 5px;
+  margin: 0 4px;
   background: transparent;
   border: 1px solid #fff;
   border-radius: 5px;
