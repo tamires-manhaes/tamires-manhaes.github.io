@@ -3,20 +3,34 @@ import theme from '../../theme';
 
 export const Header = styled.header``;
 
-export const Wrapper = styled.div``;
-
-export const Logo = styled.h1`
-  color: linear-gradient(
-    90deg,
-    rgba(0, 243, 255, 1) 0%,
-    rgba(147, 14, 255, 1) 50%,
-    rgba(252, 69, 237, 1) 100%
-  );
+export const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
-export const MenuBox = styled.div``;
+export const Logo = styled.span`
+  margin-right: 250px;
+  img {
+    width: 65px;
+    height: 45px;
+  }
 
-export const MenuList = styled.ul``;
+  @media screen and (max-width: 767px) {
+    margin-right: 90px;
+  }
+`;
+
+export const MenuBox = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const MenuList = styled.ul`
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 620px;
+`;
 
 export const MenuItem = styled.li`
   a {
@@ -24,6 +38,11 @@ export const MenuItem = styled.li`
   }
 `;
 
-export const SocialMediaBox = styled.ul``;
+export const SocialMediaBox = styled.ul`
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 135px;
+`;
 
 export const SocialMediaItem = styled.li``;
