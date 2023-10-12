@@ -1,0 +1,54 @@
+{
+  "title": "My Tech Stack",
+  "description": "Technologies i've been working with recently",
+  "stacks": [
+    {
+      "alt": "html5",
+      "iconUrl": "/icons/stack-icons/html5.svg"
+    },
+    {
+      "alt": "css3",
+      "iconUrl": "/icons/stack-icons/css.svg"
+    },
+    {
+      "alt": "js",
+      "iconUrl": "/icons/stack-icons/js.svg"
+    },
+    {
+      "alt": "ts",
+      "iconUrl": "/icons/stack-icons/typescript.svg"
+    },
+    {
+      "alt": "reactjs",
+      "iconUrl": "/icons/stack-icons/react.svg"
+    },
+    {
+      "alt": "nextjs",
+      "iconUrl": "/icons/stack-icons/nextjs.svg"
+    },
+    {
+      "alt": "node",
+      "iconUrl": "/icons/stack-icons/node.svg"
+    },
+    {
+      "alt": "mongo",
+      "iconUrl": "/icons/stack-icons/mongoDB.svg"
+    },
+    {
+      "alt": "git",
+      "iconUrl": "/icons/stack-icons/git.svg"
+    },
+    {
+      "alt": "github",
+      "iconUrl": "/icons/stack-icons/github.svg"
+    },
+    {
+      "alt": "jest",
+      "iconUrl": "/icons/stack-icons/jest.svg"
+    },
+    {
+      "alt": "vscode",
+      "iconUrl": "/icons/stack-icons/vscode.svg"
+    }
+  ]
+}
