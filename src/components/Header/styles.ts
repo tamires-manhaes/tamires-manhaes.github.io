@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Logo = styled.span`
-  margin-right: 250px;
+  margin-right: auto;
   img {
     width: 65px;
     height: 45px;
@@ -30,9 +30,21 @@ export const MenuList = styled.ul`
   align-items: center;
   justify-content: space-evenly;
   width: 620px;
+
+  @media screen and (max-width: 768px) {
+    justify-content: flex-end;
+    width: 420px;
+  }
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 export const MenuItem = styled.li`
+  @media screen and (max-width: 768px) {
+    margin: 0 5px;
+  }
   a {
     color: ${theme.colors.linkColor};
   }
@@ -43,6 +55,14 @@ export const SocialMediaBox = styled.ul`
   align-items: center;
   justify-content: space-evenly;
   width: 135px;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
-export const SocialMediaItem = styled.li``;
+export const SocialMediaItem = styled.li`
+  @media screen and (max-width: 768px) {
+    margin: 0 3px;
+  }
+`;

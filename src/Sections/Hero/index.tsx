@@ -7,10 +7,8 @@ const Hero = () => {
       <S.Wrapper>
         <S.Description>
           <p>
-            Hi 👋🏻, <br />
-            my name is <br />
-            <span className="gradient">Tamires</span> <br />i build things for
-            web
+            Hi 👋🏻, my name is <span className="gradient">Tamires</span> i build
+            things for web
           </p>
         </S.Description>
         <S.Photo src="/icons/layer-photo.png" />

@@ -43,6 +43,10 @@ export const XPCardWrapper = styled.div`
   justify-content: space-between;
   flex-direction: row;
 
+  @media screen and (max-width: 480px) {
+    flex-direction: column-reverse;
+  }
+
   span {
     color: ${theme.colors.text};
     font-family: Poppins;
@@ -66,6 +70,20 @@ export const XPCardWrapper = styled.div`
     line-height: 28px;
     letter-spacing: 1px;
     margin: 0;
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  .infosBox {
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
   }
 `;
 
@@ -73,6 +91,11 @@ export const CardDescriptionRight = styled.div`
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+
+  @media screen and (max-width: 480px) {
+    align-items: flex-start;
+    width: 100%;
+  }
 `;
 
 export const CardDescriptionLeft = styled.div`
@@ -83,5 +106,9 @@ export const CardDescriptionLeft = styled.div`
 
   span {
     margin-right: 15px;
+  }
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
   }
 `;

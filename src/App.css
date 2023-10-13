@@ -1,17 +1,21 @@
 body, html {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
   background: #191919;
 }
 
 #root {
-  min-height: 100vh;
-  width: 100vw;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  min-height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .link {
@@ -39,6 +43,11 @@ body, html {
   font-weight: 700;
   line-height: 26px;
   color: #ccc;
+
+  @media screen and (max-width: 480px) {
+    font-size: 42px;
+    line-height: 46px;
+  }
 }
 
 li, ul{

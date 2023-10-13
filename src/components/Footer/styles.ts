@@ -13,4 +13,8 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
