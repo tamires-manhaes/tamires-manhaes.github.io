@@ -31,6 +31,10 @@ export const StackItem = styled.li`
   align-items: center;
   justify-content: center;
 
+  @media screen and (max-width: 480px) {
+    width: calc(100% / 3 - 15px);
+  }
+
   .icon {
     width: 85px;
     height: 85px;

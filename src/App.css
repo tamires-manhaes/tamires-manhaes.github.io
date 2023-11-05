@@ -1,4 +1,6 @@
-body {
+
+body, html {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,6 +18,15 @@ body {
 
 h1, h2, h3, h4, h5, p {
   margin: 0;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .link {
@@ -44,6 +55,11 @@ h1, h2, h3, h4, h5, p {
   line-height: 26px;
   color: #ccc;
   margin-bottom: 29px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 42px;
+    line-height: 46px;
+  }
 }
 
 li, ul{
@@ -56,5 +72,4 @@ a {
   text-decoration: none;
   display: block;
   color: #fff;
-
 }

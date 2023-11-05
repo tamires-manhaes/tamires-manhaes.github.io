@@ -33,10 +33,17 @@ export const MenuList = styled.ul`
 `;
 
 export const MenuItem = styled.li`
-  a {
-    color: ${theme.colors.linkColor};
+
+  @media screen and (max-width: 768px) {
+    justify-content: flex-end;
+    width: 420px;
+  }
+
+  @media screen and (max-width: 480px) {
+    display: none;
   }
 `;
+
 
 export const SocialMediaBox = styled.ul`
   display: flex;
@@ -45,4 +52,9 @@ export const SocialMediaBox = styled.ul`
   width: 135px;
 `;
 
-export const SocialMediaItem = styled.li``;
+export const SocialMediaItem = styled.li`
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    margin: 0 3px;
+  }
+`;

@@ -25,7 +25,7 @@ const XPCard: FunctionComponent<IExperienceCard> = ({
       <S.XPCardWrapper>
         <S.CardDescriptionLeft>
           <h4>{position}</h4>
-          <div>
+          <div className="infosBox">
             <span>
               <BsFillBuildingFill size={12} color="#A7A7A7" /> {company}
             </span>
