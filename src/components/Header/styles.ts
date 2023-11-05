@@ -32,7 +32,6 @@ export const MenuList = styled.ul`
 `;
 
 export const MenuItem = styled.li`
-
   @media screen and (max-width: 768px) {
     justify-content: flex-end;
     width: 420px;
@@ -42,7 +41,6 @@ export const MenuItem = styled.li`
     display: none;
   }
 `;
-
 
 export const SocialMediaBox = styled.ul`
   display: flex;
