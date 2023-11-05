@@ -1,0 +1,50 @@
+{
+  "logo": "/icons/logo.png",
+  "menu": [
+    {
+      "index": 0,
+      "title": "Home",
+      "redirectTo": "header"
+    },
+    {
+      "index": 1,
+      "title": "About",
+      "redirectTo": "hero"
+    },
+    {
+      "index": 2,
+      "title": "Tech Stack",
+      "redirectTo": "techStack"
+    },
+    {
+      "index": 3,
+      "title": "Projects",
+      "redirectTo": "projects"
+    },
+    {
+      "index": 4,
+      "title": "Contact",
+      "redirectTo": "contact"
+    }
+  ],
+  "socialMedia": [
+    {
+      "index": 0,
+      "title": "github",
+      "url": "https://github.com/tamires-manhaes",
+      "iconPath": "/icons/github.svg"
+    },
+    {
+      "index": 1,
+      "title": "twitter",
+      "url": "https://twitter.com/ahvapimenta",
+      "iconPath": "/icons/twitter.svg"
+    },
+    {
+      "index": 2,
+      "title": "linkedin",
+      "url": "https://linkedin/in/tamires-manhaes",
+      "iconPath": "/icons/linkedin.svg"
+    }
+  ]
+}
