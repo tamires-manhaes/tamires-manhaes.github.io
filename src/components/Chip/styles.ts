@@ -5,7 +5,7 @@ export const Container = styled.div`
   padding: 0 22px;
   background: ${theme.colors.chip.bg};
   border-radius: 8px;
-  display: inline;
+  display: inline-flex;
 
   .label {
     color: ${theme.colors.chip.text};
