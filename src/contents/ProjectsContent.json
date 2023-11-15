@@ -13,6 +13,18 @@
       ],
       "previewUrl": "https://page404.tamires.dev",
       "githubUrl": "https://github.com/tamires-manhaes/404-spaceman"
+    },
+    {
+      "id": "advice-generator",
+      "imgUrl": "https://raw.githubusercontent.com/tamires-manhaes/advice-generator/main/advice-generator.png",
+      "title": "Advice Generator",
+      "description": "App that generate famous advices",
+      "techStach": [
+        "React",
+        "Typescript"
+      ],
+      "previewUrl": "https://advice-generator.tamires.dev",
+      "githubUrl": "https://github.com/tamires-manhaes/advice-generator"
     }
   ]
 }

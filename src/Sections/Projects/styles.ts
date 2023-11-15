@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
 `;
 
 export const ProjectsList = styled.ul`
+  display: flex;
   margin: 100px 0 80px;
   p {
     margin: 40px 0 20px;
@@ -26,11 +27,13 @@ export const ProjectItem = styled.li`
   justify-content: center;
   flex-direction: column;
   position: relative;
+  margin: 8px;
 `;
 
 export const CardImg = styled.img`
   width: 100%;
-  object-fit: contain;
+  height: 165px;
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
