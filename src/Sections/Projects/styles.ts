@@ -8,6 +8,8 @@ export const Wrapper = styled.div`
 
 export const ProjectsList = styled.ul`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin: 100px 0 80px;
   p {
     margin: 40px 0 20px;
@@ -19,6 +21,7 @@ export const ProjectsList = styled.ul`
 
 export const ProjectItem = styled.li`
   width: calc(100% / 3 - 10px);
+  max-width: 400px;
   border-radius: 20px;
   background: #363636;
   box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
@@ -27,7 +30,7 @@ export const ProjectItem = styled.li`
   justify-content: center;
   flex-direction: column;
   position: relative;
-  margin: 8px;
+  margin: 16px 8px;
 `;
 
 export const CardImg = styled.img`
@@ -42,8 +45,8 @@ export const CardImg = styled.img`
 `;
 
 export const CardDetails = styled.div`
-  padding: 30px 25px;
-  margin-top: 140px;
+  padding: 35px 25px;
+  margin-top: 145px;
   h3 {
     font-size: 30px;
     font-style: normal;
