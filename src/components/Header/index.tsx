@@ -11,7 +11,7 @@ const Header = () => {
         </S.Logo>
 
         <S.MenuBox>
-          <S.MenuList>
+          {/* <S.MenuList>
             {content.menu.map((item) => {
               return (
                 <S.MenuItem key={item.index}>
@@ -22,7 +22,7 @@ const Header = () => {
                 </S.MenuItem>
               );
             })}
-          </S.MenuList>
+          </S.MenuList> */}
           <S.SocialMediaBox>
             {content.socialMedia.map((item) => {
               return (
