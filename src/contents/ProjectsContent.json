@@ -28,7 +28,7 @@
     },
     {
       "id": "distribuidor-de-pokemon",
-      "imgUrl": "https://github.com/tamires-manhaes/distribuidor-de-pokemon/blob/main/Screenshot_20240212_121443.png",
+      "imgUrl": "https://raw.githubusercontent.com/tamires-manhaes/distribuidor-de-pokemon/main/Screenshot_20240212_121443.png",
       "title": "Distribuidor de Pokemons",
       "description": "app that distributes pokemons to trainers",
       "techStach": [
