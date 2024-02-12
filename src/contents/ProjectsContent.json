@@ -25,6 +25,18 @@
       ],
       "previewUrl": "https://advice-generator.tamires.dev",
       "githubUrl": "https://github.com/tamires-manhaes/advice-generator"
+    },
+    {
+      "id": "distribuidor-de-pokemon",
+      "imgUrl": "https://github.com/tamires-manhaes/distribuidor-de-pokemon/blob/main/Screenshot_20240212_121443.png",
+      "title": "Distribuidor de Pokemons",
+      "description": "app that distributes pokemons to trainers",
+      "techStach": [
+        "React",
+        "Typescript"
+      ],
+      "previewUrl": "https://main--distribuidor-de-pokemons.netlify.app/",
+      "githubUrl": "https://github.com/tamires-manhaes/distribuidor-de-pokemon"
     }
   ]
 }
