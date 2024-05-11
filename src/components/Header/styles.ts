@@ -27,12 +27,13 @@ export const MenuBox = styled.div`
 
 export const MenuList = styled.ul`
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  align-items: flex-end;
+  justify-content: flex-end;
   width: 620px;
 `;
 
 export const MenuItem = styled.li`
+  margin: 0 12px;
   @media screen and (max-width: 768px) {
     justify-content: flex-end;
     width: 420px;

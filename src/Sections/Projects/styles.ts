@@ -20,14 +20,15 @@ export const ProjectsList = styled.ul`
 `;
 
 export const ProjectItem = styled.li`
-  width: calc(100% / 3 - 10px);
+  width: calc(100% / 3 - 40px);
+  height: 430px;
   max-width: 400px;
   border-radius: 20px;
   background: #363636;
   box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   position: relative;
   margin: 16px 8px;
@@ -47,8 +48,13 @@ export const CardImg = styled.img`
 export const CardDetails = styled.div`
   padding: 35px 25px;
   margin-top: 145px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
   h3 {
-    font-size: 30px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
@@ -75,6 +81,7 @@ export const CardDetails = styled.div`
 
   div {
     margin: 10px 0 0;
+    width: 100%;
     > a {
       display: flex;
       align-items: center;

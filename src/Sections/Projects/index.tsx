@@ -28,11 +28,11 @@ const ProjectCard: FunctionComponent<ProjectCard> = ({
       <S.CardDetails>
         <h3>{title}</h3>
         <p>{description}</p>
-        <span>
-          <strong>Tech stack: </strong>
-          {techStach[0]},{techStach[1]}
-        </span>
         <div>
+          <span>
+            <strong>Tech stack: </strong>
+            {techStach[0]},{techStach[1]}
+          </span>
           <a href={previewUrl} target="_blank" rel="noreferrer">
             <AiOutlineLink size={20} color="#fff" /> Live Preview
           </a>

@@ -1,6 +1,7 @@
 import React from 'react';
 import * as S from './styles';
 import content from '../../contents/HeaderContent.json';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -11,18 +12,18 @@ const Header = () => {
         </S.Logo>
 
         <S.MenuBox>
-          {/* <S.MenuList>
+          <S.MenuList>
             {content.menu.map((item) => {
               return (
                 <S.MenuItem key={item.index}>
-                  <a href={`#${item.redirectTo}`} className="link">
+                  <Link to={item.redirectTo} className="link">
                     {' '}
                     {item.title}
-                  </a>
+                  </Link>
                 </S.MenuItem>
               );
             })}
-          </S.MenuList> */}
+          </S.MenuList>
           <S.SocialMediaBox>
             {content.socialMedia.map((item) => {
               return (

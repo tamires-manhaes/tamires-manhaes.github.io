@@ -17,6 +17,7 @@ export const Section = styled.div`
     font-weight: 700;
     line-height: 52px; /* 123.81% */
     letter-spacing: -0.4px;
+    margin-bottom: 15px;
   }
 
   p {
