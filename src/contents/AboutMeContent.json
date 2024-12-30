@@ -1,0 +1,86 @@
+{
+  "descrition": "I am a passionate and highly motivated software developer with a diverse background in web development and a strong focus on creating exceptional digital solutions. Over the years, I've had the privilege of working with a range of forward-thinking companies, honing my skills and gaining valuable experience that has shaped me into the developer I am today.",
+  "workXP": [
+    {
+      "position": "Frontend Developer",
+      "level": "Mid-level",
+      "company": "Aarin",
+      "location": "Salvador, BR (remote)",
+      "type": "Full time",
+      "periodWorked": "Set 2024 - Current"
+    },
+    {
+      "position": "Frontend Developer ",
+      "level": "Mid-level",
+      "company": "Zig.fun",
+      "location": "Salvador, BR (remote)",
+      "type": "Full time",
+      "periodWorked": "Mar 2024 - Out 2024"
+    },
+    {
+      "position": "Frontend Developer ",
+      "level": "Mid-level",
+      "company": "Devpass",
+      "location": "Sao Paulo, BR (remote)",
+      "type": "Full time",
+      "periodWorked": "Sep 2022 - Oct 2023"
+    },
+    {
+      "position": "Frontend Developer ",
+      "level": "Entry-level",
+      "company": "Conexa Saúde",
+      "location": "Rio de Janeiro, BR (remote)",
+      "type": "Full time",
+      "periodWorked": "Mar 2021 - May 2022"
+    },
+    {
+      "position": "Frontend Developer",
+      "level": "Entry-level",
+      "company": "Sambatech",
+      "location": "Minas Gerais, BR (remote)",
+      "type": "Full time",
+      "periodWorked": "Nov 2020 - Mar 2021"
+    },
+    {
+      "position": "Frontend Developer",
+      "level": "Intership",
+      "company": "Cubos Tecnologia ",
+      "location": "Salvador, BR (remote)",
+      "type": "Intership",
+      "periodWorked": "Aug 2020 - Nov 2020"
+    },
+    {
+      "position": "Full Stack Developer",
+      "level": "Intership",
+      "company": "Iwwa Agência e Produtora Digital ",
+      "location": "Salvador, BR",
+      "type": "Intership",
+      "periodWorked": "Jul 2019 - Mar 2020"
+    }
+  ],
+  "education": {
+    "course": "Technologist in Systems Analysis and Development",
+    "school": "Estacio de Sa (EAD)",
+    "period": "Fev 2023 - "
+  },
+  "contactMe": {
+    "socialMedia": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/tamires-manhaes/"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/tamires-manhaes"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/ahvapimenta"
+      },
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/ahvapimenta"
+      }
+    ]
+  }
+}

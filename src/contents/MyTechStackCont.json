@@ -1,0 +1,62 @@
+{
+  "title": "My Tech Stack",
+  "description": "Technologies i've been working with recently",
+  "stacks": [
+    {
+      "alt": "HTML5",
+      "iconUrl": "/icons/stack-icons/html5.svg"
+    },
+    {
+      "alt": "CSS3",
+      "iconUrl": "/icons/stack-icons/css.svg"
+    },
+    {
+      "alt": "JAVASCRIPT",
+      "iconUrl": "/icons/stack-icons/js.svg"
+    },
+    {
+      "alt": "TYPESCRIPT",
+      "iconUrl": "/icons/stack-icons/typescript.svg"
+    },
+    {
+      "alt": "REACT.JS",
+      "iconUrl": "/icons/stack-icons/react.svg"
+    },
+    {
+      "alt": "NEXT.JS",
+      "iconUrl": "/icons/stack-icons/nextjs.svg"
+    },
+    {
+      "alt": "NODE.JS",
+      "iconUrl": "/icons/stack-icons/node.svg"
+    },
+    {
+      "alt": "MONGODB",
+      "iconUrl": "/icons/stack-icons/mongoDB.svg"
+    },
+    {
+      "alt": "GIT",
+      "iconUrl": "/icons/stack-icons/git.svg"
+    },
+    {
+      "alt": "GITHUB",
+      "iconUrl": "/icons/stack-icons/github.svg"
+    },
+    {
+      "alt": "JEST",
+      "iconUrl": "/icons/stack-icons/jest.svg"
+    },
+    {
+      "alt": "VSCODE",
+      "iconUrl": "/icons/stack-icons/vscode.svg"
+    },
+    {
+      "alt": "ZUSTAND",
+      "iconUrl": "/icons/stack-icons/zustand.svg"
+    },
+    {
+      "alt": "TAILWIND.JS",
+      "iconUrl": "/icons/stack-icons/tailwindjs.svg"
+    }
+  ]
+}
