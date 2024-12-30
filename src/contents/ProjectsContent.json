@@ -31,7 +31,7 @@
     },
     {
       "id": "sleep-it",
-      "imgUrl": "https://github.com/tamires-manhaes/sleep-it-fe/blob/main/homepage.png?raw=true",
+      "imgUrl": "https://raw.githubusercontent.com/tamires-manhaes/sleep-it-fe/refs/heads/main/homepage.png?token=GHSAT0AAAAAAC3DKHASV67VADD6FBPIKBMGZ3SYTCA",
       "title": "Sleep.it",
       "description": "App that helps you track your sleep quality based on the time spent in each sleep cycle.",
       "techStach": ["Next.js", "Typescript"],
