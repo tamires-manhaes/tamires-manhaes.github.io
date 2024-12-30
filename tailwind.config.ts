@@ -9,8 +9,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "#191919",
+        boxBackground: "#363636",
+        textColor: "#CCC",
+        linkColor: "#A7A7A7",
+        chipBg: "#61249278",
+        chipText: "#fcfcfc",
+      },
+      boxShadow: {
+        custom: "2px 2px 100px 0px rgba(0, 0, 0, 0.20)",
       },
     },
   },
