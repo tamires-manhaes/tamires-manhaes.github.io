@@ -7,10 +7,7 @@
       "imgUrl": "https://github.com/tamires-manhaes/404-spaceman/blob/main/page.jpg?raw=true",
       "title": "Page 404 - Spaceman ",
       "description": "Simple 404 page with a spaceman theme",
-      "techStach": [
-        "React",
-        "Typescript"
-      ],
+      "techStach": ["React", "Typescript"],
       "previewUrl": "https://page404.tamires.dev",
       "githubUrl": "https://github.com/tamires-manhaes/404-spaceman"
     },
@@ -19,10 +16,7 @@
       "imgUrl": "https://raw.githubusercontent.com/tamires-manhaes/advice-generator/main/advice-generator.png",
       "title": "Advice Generator",
       "description": "App that generate famous advices",
-      "techStach": [
-        "React",
-        "Typescript"
-      ],
+      "techStach": ["React", "Typescript"],
       "previewUrl": "https://advice-generator.tamires.dev",
       "githubUrl": "https://github.com/tamires-manhaes/advice-generator"
     },
@@ -31,12 +25,18 @@
       "imgUrl": "https://raw.githubusercontent.com/tamires-manhaes/distribuidor-de-pokemon/main/Screenshot_20240212_121443.png",
       "title": "Distribuidor de Pokemons",
       "description": "app that distributes pokemons to trainers",
-      "techStach": [
-        "React",
-        "Typescript"
-      ],
+      "techStach": ["React", "Typescript"],
       "previewUrl": "https://main--distribuidor-de-pokemons.netlify.app/",
       "githubUrl": "https://github.com/tamires-manhaes/distribuidor-de-pokemon"
+    },
+    {
+      "id": "sleep-it",
+      "imgUrl": "https://github.com/tamires-manhaes/sleep-it-fe/blob/main/homepage.png?raw=true",
+      "title": "Sleep.it",
+      "description": "App that helps you track your sleep quality based on the time spent in each sleep cycle.",
+      "techStach": ["Next.js", "Typescript"],
+      "previewUrl": "https://sleep-it.vercel.app/",
+      "githubUrl": "https://github.com/tamires-manhaes/"
     }
   ]
 }
