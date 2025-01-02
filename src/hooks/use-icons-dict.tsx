@@ -1,5 +1,5 @@
-import { JSX } from "react";
-import { FaGithub, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
+import { JSX } from 'react';
+import { FaGithub, FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa';
 
 export const useIconsDict = () => {
   const fetchIcon = (name: string, size?: number) => {
