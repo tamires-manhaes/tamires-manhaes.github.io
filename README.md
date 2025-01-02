@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Layout
+
+I use this [figma](<https://www.figma.com/design/Obgh3joQAWvWloEy2JpyRq/Personal-Portfolio-Website-Template-%7C-Mobile-%26-Desktop-(Community)?node-id=328-4105&t=PN0Vlq7jqzJ0EqGz-0>) as base
+
 ## Getting Started
 
 First, run the development server:
