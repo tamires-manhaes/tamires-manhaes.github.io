@@ -1,54 +1,67 @@
 {
   "title": "My Tech Stack",
-  "description": "Technologies i've been working with recently",
+  "description": "The skills, tools and technologies I am really good at",
   "stacks": [
     {
-      "alt": "html5",
+      "alt": "HTML5",
       "iconUrl": "/icons/stack-icons/html5.svg"
     },
     {
-      "alt": "css3",
+      "alt": "CSS3",
       "iconUrl": "/icons/stack-icons/css.svg"
     },
     {
-      "alt": "js",
+      "alt": "JAVASCRIPT",
       "iconUrl": "/icons/stack-icons/js.svg"
     },
     {
-      "alt": "ts",
+      "alt": "TYPESCRIPT",
       "iconUrl": "/icons/stack-icons/typescript.svg"
     },
     {
-      "alt": "reactjs",
+      "alt": "REACT.JS",
       "iconUrl": "/icons/stack-icons/react.svg"
     },
     {
-      "alt": "nextjs",
+      "alt": "NEXT.JS",
       "iconUrl": "/icons/stack-icons/nextjs.svg"
     },
     {
-      "alt": "node",
+      "alt": "NODE.JS",
       "iconUrl": "/icons/stack-icons/node.svg"
     },
     {
-      "alt": "mongo",
+      "alt": "EXPRESS.JS",
+      "iconUrl": "/icons/stack-icons/express.svg"
+    },
+    {
+      "alt": "MONGODB",
       "iconUrl": "/icons/stack-icons/mongoDB.svg"
     },
     {
-      "alt": "git",
+      "alt": "GIT",
       "iconUrl": "/icons/stack-icons/git.svg"
     },
+
     {
-      "alt": "github",
-      "iconUrl": "/icons/stack-icons/github.svg"
-    },
-    {
-      "alt": "jest",
+      "alt": "JEST",
       "iconUrl": "/icons/stack-icons/jest.svg"
     },
     {
-      "alt": "vscode",
+      "alt": "VSCODE",
       "iconUrl": "/icons/stack-icons/vscode.svg"
+    },
+    {
+      "alt": "ZUSTAND",
+      "iconUrl": "/icons/stack-icons/zustand.svg"
+    },
+    {
+      "alt": "TAILWINDCSS",
+      "iconUrl": "/icons/stack-icons/tailwindjs.svg"
+    },
+    {
+      "alt": "STORYBOOK",
+      "iconUrl": "/icons/stack-icons/storybook.svg"
     }
   ]
 }

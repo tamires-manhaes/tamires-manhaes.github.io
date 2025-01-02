@@ -3,38 +3,38 @@
   "subtitle": "Things I’ve built so far",
   "projects": [
     {
-      "id": "spaceman-404",
-      "imgUrl": "https://github.com/tamires-manhaes/404-spaceman/blob/main/page.jpg?raw=true",
-      "title": "Page 404 - Spaceman ",
-      "description": "Simple 404 page with a spaceman theme",
-      "techStach": ["React", "Typescript"],
-      "previewUrl": "https://page404.tamires.dev",
-      "githubUrl": "https://github.com/tamires-manhaes/404-spaceman"
-    },
-    {
       "id": "advice-generator",
-      "imgUrl": "https://raw.githubusercontent.com/tamires-manhaes/advice-generator/main/advice-generator.png",
+      "imgUrl": "",
       "title": "Advice Generator",
       "description": "App that generate famous advices",
-      "techStach": ["React", "Typescript"],
+      "techStack": ["React.js", "Axios", "styled-components", "vite"],
       "previewUrl": "https://advice-generator.tamires.dev",
       "githubUrl": "https://github.com/tamires-manhaes/advice-generator"
     },
     {
       "id": "distribuidor-de-pokemon",
-      "imgUrl": "https://raw.githubusercontent.com/tamires-manhaes/distribuidor-de-pokemon/main/Screenshot_20240212_121443.png",
+      "imgUrl": "",
       "title": "Distribuidor de Pokemons",
-      "description": "app that distributes pokemons to trainers",
-      "techStach": ["React", "Typescript"],
+      "description": "distributes pokemons to trainers",
+      "techStack": ["React", "Typescript", "Axios", "styled-components"],
       "previewUrl": "https://main--distribuidor-de-pokemons.netlify.app/",
       "githubUrl": "https://github.com/tamires-manhaes/distribuidor-de-pokemon"
     },
     {
       "id": "sleep-it",
-      "imgUrl": "https://raw.githubusercontent.com/tamires-manhaes/sleep-it-fe/refs/heads/main/homepage.png?token=GHSAT0AAAAAAC3DKHASV67VADD6FBPIKBMGZ3SYTCA",
+      "imgUrl": "",
       "title": "Sleep.it",
-      "description": "App that helps you track your sleep quality based on the time spent in each sleep cycle.",
-      "techStach": ["Next.js", "Typescript"],
+      "description": "app to help you track your sleep quality based on the time spent in each sleep cycle.",
+      "techStack": [
+        "Next.js",
+        "React.js",
+        "Typescript",
+        "tailwindcss",
+        "zustand",
+        "zod",
+        "axios",
+        "shadcn"
+      ],
       "previewUrl": "https://sleep-it.vercel.app/",
       "githubUrl": "https://github.com/tamires-manhaes/"
     }

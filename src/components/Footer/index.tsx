@@ -1,21 +1,12 @@
-import React from 'react';
-import * as S from './styles';
-
-const Footer = () => {
+export default function Footer() {
   return (
-    <S.Container>
-      <S.Wrapper>
-        <div>
-          <img src="/icons/logo.png" alt="logo" />
-        </div>
-        <div>
-          <span className="link">
-            Designed by Pavan MG and and built Tamires 🤍
-          </span>
-        </div>
-      </S.Wrapper>
-    </S.Container>
+    <footer className="w-full bg-grey-default dark:bg-boxBackground text-gray-500 dark:text-textColor py-4 shadow-custom">
+      <div className="container mx-auto px-4 text-center">
+        <p>
+          &copy; {new Date().getFullYear()} Tamires Manhães. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
   );
-};
-
-export default Footer;
+}
