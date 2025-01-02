@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --check --ignore-path .gitignore .",
+    "format:fix": "prettier --write --ignore-path .gitignore .",
+    "prettier": "prettier --write */**/*.{js,json,ts,tsx,css,md}",
+    "lint:fix": "next lint --fix"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
