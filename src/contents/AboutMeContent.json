@@ -1,50 +1,102 @@
 {
   "descrition": "I am a passionate and highly motivated software developer with a diverse background in web development and a strong focus on creating exceptional digital solutions. Over the years, I've had the privilege of working with a range of forward-thinking companies, honing my skills and gaining valuable experience that has shaped me into the developer I am today.",
+  "location": "Salvador - BA, Brazil",
+  "workXPDescription": "Here is a quick summary of my most recent experiences:",
   "workXP": [
     {
-      "position": "Frontend Developer Mid-level",
+      "position": "Frontend Developer",
+      "level": "Mid-level",
+      "company": "Aarin",
+      "location": "Salvador, BR (remote)",
+      "type": "Full time",
+      "periodWorked": "Set 2024 - Current",
+      "skills": ["typescript", "next.js", "react.js", "redux toolkit", "jest"]
+    },
+    {
+      "position": "Frontend Developer ",
+      "level": "Mid-level",
+      "company": "Zig.fun",
+      "location": "Salvador, BR (remote)",
+      "type": "Full time",
+      "periodWorked": "Mar 2024 - Out 2024",
+      "skills": ["javascript", "typescript", "next.js", "react.js", "storybook"]
+    },
+    {
+      "position": "Frontend Developer ",
       "level": "Mid-level",
       "company": "Devpass",
       "location": "Sao Paulo, BR (remote)",
       "type": "Full time",
-      "periodWorked": "Sep 2022 - Oct 2023"
+      "periodWorked": "Sep 2022 - Oct 2023",
+      "skills": [
+        "typescript",
+        "react.js",
+        "node.js",
+        "express.js",
+        "discord api"
+      ]
     },
     {
-      "position": "Entry-level Frontend Developer Entry-level",
+      "position": "Frontend Developer ",
       "level": "Entry-level",
       "company": "Conexa Saúde",
       "location": "Rio de Janeiro, BR (remote)",
       "type": "Full time",
-      "periodWorked": "Mar 2021 - May 2022"
+      "periodWorked": "Mar 2021 - May 2022",
+      "skills": ["javascript", "typescript", "storybook", "react.js", "jest"]
     },
     {
-      "position": "Frontend Developer Entry-level",
+      "position": "Frontend Developer",
       "level": "Entry-level",
       "company": "Sambatech",
       "location": "Minas Gerais, BR (remote)",
       "type": "Full time",
-      "periodWorked": "Nov 2020 - Mar 2021"
+      "periodWorked": "Nov 2020 - Mar 2021",
+      "skills": ["javascript", "typescript", "react.js", "jest"]
     },
     {
-      "position": "Frontend Developer Intern",
+      "position": "Frontend Developer",
       "level": "Intership",
       "company": "Cubos Tecnologia ",
       "location": "Salvador, BR (remote)",
       "type": "Intership",
-      "periodWorked": "Aug 2020 - Nov 2020"
+      "periodWorked": "Aug 2020 - Nov 2020",
+      "skills": ["javascript", "typescript", "react.js", "graphql", "jest"]
     },
     {
-      "position": "Full Stack Developer Intern",
+      "position": "Full Stack Developer",
       "level": "Intership",
       "company": "Iwwa Agência e Produtora Digital ",
       "location": "Salvador, BR",
       "type": "Intership",
-      "periodWorked": "Jul 2019 - Mar 2020"
+      "periodWorked": "Jul 2019 - Mar 2020",
+      "skills": ["javascript", "jquery", "wordpress", "php", "html5", "css3"]
     }
   ],
   "education": {
     "course": "Technologist in Systems Analysis and Development",
     "school": "Estacio de Sa (EAD)",
     "period": "Fev 2023 - "
+  },
+  "contactMe": {
+    "descripton": "What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.",
+    "socialMedia": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/tamires-manhaes/"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/tamires-manhaes"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/ahvapimenta"
+      },
+      {
+        "name": "tiktok",
+        "url": "https://www.tiktok.com/@tamires.dev"
+      }
+    ]
   }
 }

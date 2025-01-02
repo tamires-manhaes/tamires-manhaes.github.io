@@ -4,27 +4,12 @@
     {
       "index": 0,
       "title": "Home",
-      "redirectTo": "header"
+      "redirectTo": "/"
     },
     {
       "index": 1,
-      "title": "About",
-      "redirectTo": "hero"
-    },
-    {
-      "index": 2,
-      "title": "Tech Stack",
-      "redirectTo": "techStack"
-    },
-    {
-      "index": 3,
-      "title": "Projects",
-      "redirectTo": "projects"
-    },
-    {
-      "index": 4,
-      "title": "Contact",
-      "redirectTo": "contact"
+      "title": "PepperStdio",
+      "redirectTo": "/pepper-stdio"
     }
   ],
   "socialMedia": [

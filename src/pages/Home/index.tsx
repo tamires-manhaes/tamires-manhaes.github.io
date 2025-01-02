@@ -1,25 +1,18 @@
-import React, { FunctionComponent } from 'react';
-import * as S from './styles';
-import Header from '../../components/Header';
-import Hero from '../../Sections/Hero';
-import MyTechStack from '../../Sections/MyTechStack';
-import About from '../../Sections/About';
-import Projects from '../../Sections/Projects';
-import Footer from '../../components/Footer';
+import Layout from "@/components/Layout";
+import About from "@/components/Sections/About";
+import Contact from "@/components/Sections/Contact";
+import Projects from "@/components/Sections/Projects";
+import TechStack from "@/components/Sections/TechStack";
+import WorkExperience from "@/components/Sections/WorkXP";
 
-const Home: FunctionComponent = () => {
+export default function HomePage() {
   return (
-    <S.Container>
-      <Header />
-      <S.Wrapper>
-        <Hero />
-        <About />
-        <MyTechStack />
-        <Projects />
-      </S.Wrapper>
-      <Footer />
-    </S.Container>
+    <Layout>
+      <About />
+      <TechStack />
+      <WorkExperience />
+      <Projects />
+      <Contact />
+    </Layout>
   );
-};
-
-export default Home;
+}

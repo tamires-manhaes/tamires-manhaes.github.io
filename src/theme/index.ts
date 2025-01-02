@@ -1,31 +1,35 @@
-export interface ITheme {
-  colors: {
-    background: string;
-    boxBackground: string;
-    boxShadow: string;
-    text: string;
-    title: string;
-    linkColor: string;
-    chip: {
-      bg: string;
-      text: string;
-    };
-  };
-}
-
-const theme: ITheme = {
-  colors: {
-    background: '#191919',
-    boxBackground: '#363636',
-    boxShadow: '2px 2px 100px 0px rgba(0, 0, 0, 0.20)',
-    text: '#CCC',
-    title: '#CCC',
-    linkColor: '#A7A7A7',
-    chip: {
-      bg: '#D7FFE0',
-      text: '#018C0F',
+export const colors = {
+  grey: {
+    light: {
+      default: "#fff",
+      "50": "#f9fafb",
+      "100": "#f3f4f6",
+      "200": "#e5e7eb",
+      "300": "#d1d5db",
+      "400": "#9ca3af",
+      "500": "#6b7280",
+      "600": "#4b5563",
+      "700": "#374151",
+      "800": "#1f2937",
+      "900": "#111827",
+      "950": "#030712",
+    },
+    dark: {
+      default: "#030712",
+      "50": "#111827",
+      "100": "#1f2937",
+      "200": "#374151",
+      "300": "#4b5563",
+      "400": "#6b7280",
+      "500": "#9ca3af",
+      "600": "#d1d5db",
+      "700": "#e5e7eb",
+      "800": "#f3f4f6",
+      "900": "#f9fafb",
+      "950": "#ffffff",
     },
   },
+  emerald: {
+    500: "#10b981",
+  },
 };
-
-export default theme;
