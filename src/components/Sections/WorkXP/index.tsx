@@ -26,7 +26,7 @@ export default function WorkExperience() {
                 {exp.company} | {exp.level}
               </strong>
               <div className="flex flex-wrap my-2">
-                {exp.skills.map((skill) => (
+                {exp.skills?.map((skill) => (
                   <Badge key={skill} className="mr-2 mb-2">
                     {skill}
                   </Badge>

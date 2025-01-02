@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { navbar } from "@/contents/navBar";
-import Link from "next/link";
+import { navbar } from '@/contents/navBar';
+import Link from 'next/link';
 
 export default function NavBar() {
   return (

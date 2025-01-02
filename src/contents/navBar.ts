@@ -1,17 +1,17 @@
-import { routes } from "@/configs/routes";
+import { routes } from '@/configs/routes';
 
 export const navbar = {
   links: [
     {
-      name: "Home",
+      name: 'Home',
       url: routes.home,
     },
     {
-      name: "Blog",
+      name: 'Blog',
       url: routes.blog,
     },
     {
-      name: "Projects",
+      name: 'Projects',
       url: routes.project,
     },
   ],
