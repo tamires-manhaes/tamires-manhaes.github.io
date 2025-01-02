@@ -1,13 +1,13 @@
-import content from "@/contents/AboutMeContent.json";
-import { useIconsDict } from "@/hooks/use-icons-dict";
-import { FaLocationDot } from "react-icons/fa6";
+import content from '@/contents/AboutMeContent.json';
+import { useIconsDict } from '@/hooks/use-icons-dict';
+import { FaLocationDot } from 'react-icons/fa6';
 
 export default function About() {
   const { fetchIcon } = useIconsDict();
   return (
-    <section id="about" className="py-8 mb-12">
+    <section id="about" className="py-8 px-8">
       <h2 className="text-5xl font-bold mb-6 dark:text-textColor">
-        Hi, I'm Tamires!
+        {`Hi, I'm Tamires!`}
       </h2>
 
       <p className="text-lg dark:text-textColor">{content.descrition}</p>

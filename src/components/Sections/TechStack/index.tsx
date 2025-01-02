@@ -1,6 +1,6 @@
-import { Badge } from "@/components/Badge";
-import content from "@/contents/MyTechStackCont.json";
-import Image from "next/image";
+import { Badge } from '@/components/Badge';
+import content from '@/contents/MyTechStackCont.json';
+import Image from 'next/image';
 
 export default function TechStack() {
   return (
@@ -13,11 +13,11 @@ export default function TechStack() {
           {content.description}
         </span>
       </div>
-      <ul className="flex items-center  justify-around flex-wrap py-6 gap-6">
+      <ul className="flex items-center  justify-around flex-wrap py-6 px-8 md:px-0 gap-6">
         {content.stacks.map((tech) => (
           <li
             key={tech.alt}
-            className="w-[calc(100%/2-20px)] lg:w-[calc(100%/7-40px)] md:w-[calc(100%/5-20px)] sm min-h-[150px] bg-chipBg text-chipText rounded-lg px-3 py-3 text-center flex flex-wrap items-center justify-center flex-col shadow-custom"
+            className="w-[calc(100%/3-20px)]  md:w-[calc(100%/5-20px)] lg:w-[calc(100%/7-40px)] min-h-[150px] bg-chipBg text-chipText rounded-lg px-3 py-3 text-center flex flex-wrap items-center justify-center flex-col shadow-custom"
           >
             <Image
               className="mx-auto mb-3"

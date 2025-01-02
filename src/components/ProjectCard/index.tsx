@@ -1,6 +1,6 @@
-import { illustrations } from "@/configs/illustrations";
-import Image from "next/image";
-import { Badge } from "../Badge";
+import { illustrations } from '@/configs/illustrations';
+import Image from 'next/image';
+import { Badge } from '../Badge';
 
 interface ProjectCardProps {
   readonly id: string;
@@ -19,14 +19,14 @@ export default function ProjectCard({
   description,
   previewUrl,
   even,
-  stack
+  stack,
 }: ProjectCardProps) {
   return (
     <li
       key={id}
-      className={`w-full flex flex-wrap justify-between ${even ? 'flex-row' : 'flex-row-reverse'}   rounded-lg overflow-hidden bg-grey-100 `}
+      className={`w-full flex flex-col flex-wrap justify-between ${even ? 'flex-col md:flex-row' : 'flex-col md:flex-row'} rounded-lg bg-grey-100 `}
     >
-      <div className="w-[50%] p-4 bg-grey-400 flex content-center justify-center">
+      <div className="w-full md:w-[50%] p-4 bg-grey-400 flex content-center justify-center">
         <Image
           src={imgURL || illustrations.placeholder}
           alt={title}
@@ -35,7 +35,7 @@ export default function ProjectCard({
           className="w-full max-h-[350px]"
         />
       </div>
-      <div className="p-10 w-[50%] flex justify-between flex-col">
+      <div className=" p-6 md:p-10 w-full md:w-[50%] flex justify-between flex-col">
         <div className="pr-8">
           <h3 className="text-2xl font-semibold mb-6 dark:text-textColor">
             {title}
@@ -45,16 +45,18 @@ export default function ProjectCard({
           </p>
           <ul>
             {stack.map((tech) => (
-              <Badge key={tech} className="mr-2">{tech}</Badge>
+              <Badge key={tech} className="mr-2  mb-2 md:mb-0">
+                {tech}
+              </Badge>
             ))}
           </ul>
         </div>
         <a
           href={previewUrl}
           target="_blank"
-          className="text-grey-400 dark:text-chipText hover:underline"
+          className="mt-5 md:mt-0 text-grey-400 dark:text-chipText hover:underline inline"
         >
-          Learn more
+          <span>Learn more</span>
         </a>
       </div>
     </li>
