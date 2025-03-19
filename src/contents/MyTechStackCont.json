@@ -39,10 +39,17 @@
       "iconUrl": "/icons/stack-icons/mongoDB.svg"
     },
     {
+      "alt": "POSTGRESSQL",
+      "iconUrl": "/icons/stack-icons/postgresql.svg"
+    },
+    {
+      "alt": "PRISMA",
+      "iconUrl": "/icons/stack-icons/prisma.svg"
+    },
+    {
       "alt": "GIT",
       "iconUrl": "/icons/stack-icons/git.svg"
     },
-
     {
       "alt": "JEST",
       "iconUrl": "/icons/stack-icons/jest.svg"
@@ -54,6 +61,10 @@
     {
       "alt": "ZUSTAND",
       "iconUrl": "/icons/stack-icons/zustand.svg"
+    },
+    {
+      "alt": "REDUX TOOLKIT",
+      "iconUrl": "/icons/stack-icons/redux.svg"
     },
     {
       "alt": "TAILWINDCSS",

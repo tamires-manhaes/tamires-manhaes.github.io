@@ -17,7 +17,7 @@ export default function TechStack() {
         {content.stacks.map((tech) => (
           <li
             key={tech.alt}
-            className="w-[calc(100%/3-20px)]  md:w-[calc(100%/5-20px)] lg:w-[calc(100%/7-40px)] min-h-[150px] bg-chipBg text-chipText rounded-lg px-3 py-3 text-center flex flex-wrap items-center justify-center flex-col shadow-custom"
+            className="w-[calc(100%/3-20px)]  md:w-[calc(100%/5-20px)] lg:w-[calc(100%/6-40px)] min-h-[150px] bg-chipBg text-chipText rounded-lg px-3 py-3 text-center flex flex-wrap items-center justify-center flex-col shadow-custom"
           >
             <Image
               className="mx-auto mb-3"
