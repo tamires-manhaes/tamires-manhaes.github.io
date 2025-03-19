@@ -12,19 +12,26 @@ export default function WorkExperience() {
           {content.workXPDescription}
         </span>
       </div>
-      <ul className="space-y-6">
+      <ul className="space-y-6 flex flex-wrap justify-evenly items-stretch">
         {content.workXP.map((exp) => (
           <li
             key={exp.company}
-            className="border-l-4 border-gray-300 rounded-md p-4 pl-4 flex  flex-col md:flex-row justify-between content-center bg-grey-50"
+            className="mx-1 my-0 w-full lg:w-[calc(100%/2-15px)] flex-wrap border-l-4 border-gray-300 rounded-md p-4 pl-4 flex flex-col md:flex-row justify-between items-center bg-grey-50"
           >
-            <div>
+            <div className="flex flex-col justify-between items-start">
               <h3 className="text-xl font-semibold dark:text-textColor">
                 {exp.position}
               </h3>
-              <strong>
-                {exp.company} | {exp.level}
-              </strong>
+              <strong>{exp.company}</strong>
+              <span className="text-sm mb-1">{exp.description}</span>
+            </div>
+            <div>
+              <p className="text-gray-600 text-sm dark:text-linkColor">
+                {exp.periodWorked}
+              </p>
+              <p className="mt-1 dark:text-textColor text-sm">
+                {exp.type} - {exp.location}
+              </p>
               <div className="flex flex-wrap my-2">
                 {exp.skills?.map((skill) => (
                   <Badge key={skill} className="mr-2 mb-2">
@@ -32,14 +39,6 @@ export default function WorkExperience() {
                   </Badge>
                 ))}
               </div>
-            </div>
-            <div className="flex flex-wrap flex-col justify-center  items-start md:items-end  content-start md:content-center">
-              <p className="text-gray-600 dark:text-linkColor">
-                {exp.periodWorked}
-              </p>
-              <p className="mt-2 dark:text-textColor">
-                {exp.type} - {exp.location}
-              </p>
             </div>
           </li>
         ))}
