@@ -22,7 +22,7 @@
     },
     {
       "id": "sleep-it",
-      "imgUrl": "",
+      "imgUrl": "https://github.com/tamires-manhaes/sleep-it-fe/blob/main/homepage.png?raw=true",
       "title": "Sleep.it",
       "description": "app to help you track your sleep quality based on the time spent in each sleep cycle.",
       "techStack": [
@@ -37,6 +37,24 @@
       ],
       "previewUrl": "https://sleep-it.vercel.app/",
       "githubUrl": "https://github.com/tamires-manhaes/"
+    },
+    {
+      "id": "course-it",
+      "imgUrl": "https://github.com/tamires-manhaes/course-it/blob/main/project.png?raw=true",
+      "title": "course.it",
+      "description": "create a course roadmap using jsonserver to host de contents from youtube",
+      "techStack": ["React", "Typescript", "Redux", "tailwindcss", "axios", "jsonserver", "vite"],
+      "previewUrl": "",
+      "githubUrl": "https://github.com/tamires-manhaes/course-it"
+    },
+    {
+      "id": "saas-rebac",
+      "imgUrl": "https://github.com/tamires-manhaes/saas-rbac/blob/main/project.png?raw=true",
+      "title": "sassy-saas.club",
+      "description": "Is a Sassy Saas for organizations to host projects, members and manage their infos using RBAC permissons and roles",
+      "techStack": ["Next.js", "Typescript", "Node.js", "Fastify", "Prisma", "zod","PostgresQL", "tailwindcss", "shadcn"],
+      "previewUrl": "",
+      "githubUrl": "https://github.com/tamires-manhaes/saas-rbac"
     }
   ]
 }
