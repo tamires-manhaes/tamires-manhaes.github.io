@@ -30,6 +30,14 @@ export default {
           '500': colors.emerald['500'],
         },
       },
+      animation: {
+        blink: 'blink 0.6s steps(2, start) infinite',
+      },
+      keyframes: {
+        blink: {
+          '50%': { opacity: '0' },
+        },
+      },
     },
   },
   plugins: [],
