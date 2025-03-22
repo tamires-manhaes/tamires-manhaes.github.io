@@ -13,6 +13,7 @@
     "lint:fix": "next lint --fix"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
     "class-variance-authority": "^0.7.1",
     "emailjs-com": "^3.2.0",
     "lucide-react": "^0.469.0",
