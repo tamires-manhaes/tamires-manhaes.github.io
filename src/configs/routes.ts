@@ -1,6 +1,7 @@
 export const routes = {
   home: '/',
   blog: '/blog',
-  project: '/projects',
+  projects: '/projects',
+  project: (slug: string) => `/projects/${slug}`,
   article: (slug: string) => `/blog/${slug}`,
 };
