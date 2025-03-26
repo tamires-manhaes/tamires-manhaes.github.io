@@ -24,15 +24,15 @@ export const useContact = () => {
       setIsLoading(true);
       await emailjs
         .send(
-          envs.emailjs.serviceId || '', // Service ID from EmailJS
-          envs.emailjs.templateId || '', // Template ID from EmailJS
+          envs.emailjs.serviceId || '',
+          envs.emailjs.templateId || '',
           {
             name: formData.name,
             email: formData.email,
             message: formData.message,
             date: formatDate(today),
           },
-          envs.emailjs.publicId || '', // Public Key (from EmailJS)
+          envs.emailjs.publicId || '',
         )
         .then((result) => {
           if (result.status === 200) {
@@ -50,7 +50,7 @@ export const useContact = () => {
       setIsLoading(false);
       alert(status.toString());
     }
-    // Reset form after submission
+
     setFormData({ name: '', email: '', message: '' });
   };
   return {
