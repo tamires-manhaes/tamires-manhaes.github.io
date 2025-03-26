@@ -1,6 +1,7 @@
 import { illustrations } from '@/configs/illustrations';
 import Image from 'next/image';
 import { Badge } from '../Badge';
+import Link from 'next/link';
 
 interface ProjectCardProps {
   readonly id: string;
@@ -8,7 +9,7 @@ interface ProjectCardProps {
   readonly title: string;
   readonly description: string;
   readonly previewUrl: string;
-  readonly stack: string[];
+  readonly stack: string;
   readonly even: boolean;
 }
 
@@ -17,10 +18,10 @@ export default function ProjectCard({
   imgURL,
   title,
   description,
-  previewUrl,
   even,
   stack,
 }: ProjectCardProps) {
+  const stackArr = stack.split(';');
   return (
     <li
       key={id}
@@ -32,7 +33,7 @@ export default function ProjectCard({
           alt={title}
           width={300}
           height={200}
-          className="w-full max-h-[350px]"
+          className="w-full max-h-[300px]"
         />
       </div>
       <div className=" p-6 md:p-10 w-full md:w-[50%] flex justify-between flex-col">
@@ -44,20 +45,19 @@ export default function ProjectCard({
             {description}
           </p>
           <ul>
-            {stack.map((tech) => (
-              <Badge key={tech} className="mr-2  mb-2 md:mb-0">
+            {stackArr.map((tech) => (
+              <Badge key={tech} className="mr-2 mb-2 md:mb-1">
                 {tech}
               </Badge>
             ))}
           </ul>
         </div>
-        <a
-          href={previewUrl}
-          target="_blank"
+        <Link
+          href={`/project/${id}`}
           className="mt-5 md:mt-0 text-grey-400 dark:text-chipText hover:underline inline"
         >
           <span>Learn more</span>
-        </a>
+        </Link>
       </div>
     </li>
   );
