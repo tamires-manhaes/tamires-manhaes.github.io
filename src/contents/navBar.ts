@@ -10,9 +10,9 @@ export const navbar = {
       name: 'Blog',
       url: routes.blog,
     },
-    {
-      name: 'Projects',
-      url: routes.project,
-    },
+    // {
+    //   name: 'Projects',
+    //   url: routes.projects,
+    // },
   ],
 };
