@@ -4,7 +4,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { illustrations } from '@/configs/illustrations';
 import { Button } from '@/components/Button';
-import ProjectReadme from './project-readme';
 import Footer from '@/components/Footer';
 import Readme from '@/components/Readme';
 import { getReadme } from '@/utils/getReadme';

@@ -17,7 +17,7 @@ export function BlogPage() {
           <div className="w-24 h-1 bg-chipBg mx-auto mb-8"></div>
 
           <p className="text-lg mb-8 dark:text-textColor">
-            I'm currently working on some exciting content for my blog. Stay
+            Im currently working on some exciting content for my blog. Stay
             tuned for articles about frontend development, UI/UX design, and the
             latest web technologies.
           </p>
