@@ -31,7 +31,7 @@ const TypingAnimation = ({
   }, [index, text, speed, pause]);
 
   return (
-    <div className="inline-block text-5xl font-bold mb-6 dark:text-textColor font-mono">
+    <div className="inline-block text-4xl lg:text-5xl font-bold mb-6 dark:text-textColor font-mono">
       <span>{displayedText}</span>
       <span className="ml-1 w-1 h-6 bg-black inline-block animate-blink"></span>
     </div>
