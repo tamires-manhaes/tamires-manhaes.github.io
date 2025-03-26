@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function NavBar() {
   return (
-    <ul className="flex space-x-4 items-center">
+    <ul className="flex space-x-4 items-center ">
       {navbar.links.map((link) => {
         return (
           <li key={link.name}>
