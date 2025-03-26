@@ -5,7 +5,7 @@ import Layout from '@/components/Layout';
 import { CornerDownLeft } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 
-export function BlogPage() {
+export default function BlogPage() {
   const router = useRouter();
   return (
     <Layout>

@@ -5,7 +5,7 @@ import Layout from '@/components/Layout';
 import { Code, CornerDownLeft, Rocket } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 
-export function ProjectsPage() {
+export default function ProjectsPage() {
   const router = useRouter();
   return (
     <Layout>
