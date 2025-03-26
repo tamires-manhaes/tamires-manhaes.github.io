@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       { hostname: 'github.com' },
       { hostname: 'avatars.githubusercontent.com' },
+      { hostname: 'raw.githubusercontent.com' },
     ],
   },
 };
