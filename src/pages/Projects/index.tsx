@@ -25,8 +25,8 @@ export function ProjectsPage() {
           </div>
 
           <p className="text-lg mb-8 dark:text-textColor">
-            I'm currently putting the finishing touches on my project showcase.
-            Soon you'll be able to explore my portfolio of web applications,
+            Im currently putting the finishing touches on my project showcase.
+            Soon youll be able to explore my portfolio of web applications,
             responsive designs, and interactive experiences.
           </p>
 
