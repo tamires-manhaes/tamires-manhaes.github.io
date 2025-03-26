@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@plugin "@tailwindcss/typography";
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -33,4 +35,12 @@ body {
   justify-content: center;
   flex-direction: column;
   overflow-x: hidden;
+}
+
+[data-badges] {
+  @apply flex flex-row flex-wrap justify-center gap-2 p-1;
+}
+
+[data-badges] > img {
+  @apply m-0;
 }
