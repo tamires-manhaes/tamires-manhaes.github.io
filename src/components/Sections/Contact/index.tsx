@@ -8,7 +8,7 @@ import content from '@/contents/AboutMeContent.json';
 import { useIconsDict } from '@/hooks/use-icons-dict';
 import { Badge } from '@/components/Badge';
 
-export default function Contact() {
+export default function ContactForm() {
   const { handleChange, handleSubmit, formData, isLoading } = useContact();
   const { fetchIcon } = useIconsDict();
   return (
