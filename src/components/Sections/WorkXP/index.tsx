@@ -48,7 +48,9 @@ export default async function WorkExperience() {
                 </div>
               </div>
               <div className="w-full md:w-[60%]">
-                <span className="text-sm mb-1">{exp.description}</span>
+                <span className="text-sm mb-1 dark:text-slate-50">
+                  {exp.description}
+                </span>
               </div>
             </li>
           );
