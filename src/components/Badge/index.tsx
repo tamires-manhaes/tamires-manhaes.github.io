@@ -24,7 +24,8 @@ const badgeVariants = cva(
 );
 
 export interface BadgeProps
-  extends Readonly<React.HTMLAttributes<HTMLDivElement>>,
+  extends
+    Readonly<React.HTMLAttributes<HTMLDivElement>>,
     Readonly<VariantProps<typeof badgeVariants>> {
   readonly fontSize?: string;
 }
