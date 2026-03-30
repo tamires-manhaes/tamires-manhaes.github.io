@@ -1,13 +1,8 @@
 import { Badge } from '@/components/Badge';
 import content from '@/contents/AboutMeContent.json';
-import { supabase } from '@/utils/supabase';
+import workXPData from '@/contents/work-xp.json';
 
-export default async function WorkExperience() {
-  const { data: workXP } = await supabase
-    .from('work-xp')
-    .select('*')
-    .order('order', { ascending: false });
-
+export default function WorkExperience() {
   return (
     <section id="work-experience" className="py-8 px-8 mb-12">
       <div className="mx-auto mb-8">
@@ -19,7 +14,7 @@ export default async function WorkExperience() {
         </span>
       </div>
       <ul className="space-y-6 flex flex-wrap justify-evenly items-stretch">
-        {workXP?.map((exp) => {
+        {workXPData.map((exp) => {
           const skills = exp.skills?.split(';');
           return (
             <li

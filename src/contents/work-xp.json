@@ -1,0 +1,82 @@
+[
+  {
+    "position": "Software Engineer",
+    "company": "Nodian",
+    "location": "São Paulo, BR (Remote)",
+    "type": "Full time",
+    "periodWorked": "Sep 2025 - actual",
+    "skills": "Arquitetura & Desenvolvimento Full-Stack; Engenharia de Software; Inteligência Artificial; Desenvolvimento de Software",
+    "order": 8,
+    "description": "With a robust background spanning foundational architecture to cutting-edge innovation, I led the full-stack development of multiple products, establishing monorepo standards, CI/CD pipelines, and scalable Docker infrastructure. A key differentiator is my strategic AI integration, ranging from health data platforms with natural language querying to open-source frameworks for agent orchestration and local LLM fine-tuning. By bridging rigorous security—such as SSO and audit logging—with dynamic real-time systems, they demonstrate a rare versatility that transforms complex concepts into high-performance, market-ready solutions."
+  },
+  {
+    "position": "Software Engineer",
+    "company": "Aarin",
+    "location": "Salvador, BR (remote)",
+    "type": "Full time",
+    "periodWorked": "Set 2024 - Jul 2025",
+    "skills": "typescript; next.js; react.js; redux toolkit; jest",
+    "order": 7,
+    "description": "I worked on Bradesco projects in the Credit Recovery Department, both on the Platform for operators and on the User-focused Portal, in a multidisciplinary team. I worked on building and maintaining the initial versions of the project, focusing on Next.js/Redux Toolkit as the interface base using MUI for the components, along with unit tests to ensure the integrity of the interface."
+  },
+  {
+    "position": "Software Engineer",
+    "company": "Zig.fun",
+    "location": "Salvador, BR (remote)",
+    "type": "Full time",
+    "periodWorked": "Nov 2023 - Out 2024",
+    "skills": "javascript; typescript; next.js; react.js; storybook",
+    "order": 6,
+    "description": "I am tasked with overseeing the creation and maintenance of the Library Component within the company, collaborating closely with our front-end developers. This involves direct collaboration with our design team and Stack Leaders to craft a scalable and functional Library intended for use across all our products. Apart from this i've work in multiple products in the company pontualy to implement new features and fix bugs"
+  },
+  {
+    "position": "Software Engineer",
+    "company": "Devpass",
+    "location": "Sao Paulo, BR (remote)",
+    "type": "Full time",
+    "periodWorked": "Jun 2022 - Oct 2023",
+    "skills": "typescript; react.js; node.js; express.js; discord-api",
+    "order": 5,
+    "description": "I was a technical reference in frontend, bringing technical and visual solutions to the developed product. I worked directly on the redesign of the Landing Page and initial development of the company's component library. I also worked on improving the SEO of the landing page. In addition to working on the ideation and development of SaaS and internal dashboard, I partially worked on the development of core features in node.js + express.js + mongo.db"
+  },
+  {
+    "position": "Software Engineer",
+    "company": "Conexa Saúde",
+    "location": "Rio de Janeiro, BR (remote)",
+    "type": "Full time",
+    "periodWorked": "Mar 2021 - May 2022",
+    "skills": "javascript; typescript; storybook; react.js; jest",
+    "order": 4,
+    "description": "As a Software Engineer, I had the responsibility to ensure that all technical solutions are aligned with the business strategy and product-related impacts using scalable architectures that ensure product quality integrity. I actively participated in the evolution of the team's technical skills and continuous improvement efforts that impact other teams. I worked directly on the development of the company's Design System and Component Library."
+  },
+  {
+    "position": "Software Developer",
+    "company": "Sambatech",
+    "location": "Minas Gerais, BR (remote)",
+    "type": "Full time",
+    "periodWorked": "Nov 2020 - Mar 2021",
+    "skills": "javascript; typescript; react.js; jest",
+    "order": 3,
+    "description": "As a Front-End Developer, I worked on critical products for Samba's business and had the opportunity to learn from incredible people and embrace new challenges as I developed. I contributed to the creation and evolution of products developed for large companies using Sambatech platforms. I learned to develop myself using cutting-edge technologies, in an efficient and scalable way."
+  },
+  {
+    "position": "Frontend Engineer",
+    "company": "Cubos Tecnologia",
+    "location": "Salvador, BR (remote)",
+    "type": "Intership",
+    "periodWorked": "Aug 2020 - Nov 2020",
+    "skills": "javascript; typescript; react.js; graphql; jest",
+    "order": 2,
+    "description": "I actively participated in the idealization, planning and development stages of our clients' products. I also participated in the discussion of the technologies that were used in the projects. I learned how to develop responsive web applications with React.js, consuming web services, based on layouts made by our designers, aiming for an excellent UX."
+  },
+  {
+    "position": "Full Stack Developer",
+    "company": "Iwwa Agência e Produtora Digital",
+    "location": "Salvador, BR",
+    "type": "Intership",
+    "periodWorked": "Jul 2019 - Mar 2020",
+    "skills": "javascript; jquery; wordpress; php; html5; css3",
+    "order": 1,
+    "description": "I worked as an intern at IWWA, where I learned about full stack web development using PHP and Wordpress for the back-end, HTML, CSS, Javascript, Jquery, Sass and Gulp for the front-end in website development and maintenance."
+  }
+]
