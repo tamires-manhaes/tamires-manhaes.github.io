@@ -1,21 +1,30 @@
-import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import type { Metadata, Viewport } from 'next';
+import { fraunces, inter, jetbrainsMono } from '@/lib/fonts';
 import './globals.css';
+import { Providers } from '@/components/providers';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
+export const viewport: Viewport = {
+  themeColor: '#211b16',
+};
 
 export const metadata: Metadata = {
-  title: 'tamires.dev',
+  title: 'Tamires Manhães — Software Engineer',
   description:
-    "Explore the portfolio of p1ment4, a skilled frontend developer specializing in modern web development using React, Next.js, JavaScript, and CSS. Discover projects, case studies, and innovative solutions showcasing expertise in responsive design, performance optimization, and user-friendly interfaces. Let's build the web together!",
+    'Full stack, frontend-first software engineer. TypeScript, React, Node and AI.',
+  openGraph: {
+    title: 'Tamires Manhães — Software Engineer',
+    description: 'Full stack, frontend-first software engineer.',
+    type: 'website',
+    url: 'https://tamires.dev',
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/site.webmanifest',
 };
 
 export default function RootLayout({
@@ -24,11 +33,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable} antialiased`}
       >
-        <div id="root">{children}</div>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

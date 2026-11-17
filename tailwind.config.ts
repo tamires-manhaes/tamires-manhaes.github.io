@@ -3,6 +3,7 @@ import type { Config } from 'tailwindcss';
 import tailwindcssTypography from '@tailwindcss/typography';
 
 export default {
+  darkMode: 'class',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -13,6 +14,17 @@ export default {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
+        sink: 'var(--sink)',
+        raise: 'var(--raise)',
+        soft: 'var(--soft)',
+        faint: 'var(--faint)',
+        hair: 'var(--hair)',
+        gold: 'var(--gold)',
+        camel: 'var(--camel)',
+        'on-gold': 'var(--on-gold)',
+        terra: 'var(--terra)',
+        olive: 'var(--olive)',
+        muted: 'var(--muted)',
         grey: {
           default: colors.grey.dark.default,
           '50': colors.grey.dark['50'],
@@ -31,12 +43,22 @@ export default {
           '500': colors.emerald['500'],
         },
       },
+      fontFamily: {
+        serif: ['var(--font-serif)', 'Georgia', 'serif'],
+        sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-mono)', 'ui-monospace', 'monospace'],
+      },
       animation: {
-        blink: 'blink 0.6s steps(2, start) infinite',
+        blink: 'blink 1s steps(1) infinite',
+        rise: 'rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both',
       },
       keyframes: {
         blink: {
           '50%': { opacity: '0' },
+        },
+        rise: {
+          from: { opacity: '0', transform: 'translateY(12px)' },
+          to: { opacity: '1', transform: 'none' },
         },
       },
     },

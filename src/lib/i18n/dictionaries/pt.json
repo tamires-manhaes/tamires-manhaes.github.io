@@ -1,0 +1,428 @@
+{
+  "skip": "Pular para o conteúdo",
+  "role": "Engenheira de Software",
+  "focus": "full stack, frontend primeiro, IA",
+  "brand": "tamires.dev",
+  "cv": {
+    "btn": "Currículo (PDF)",
+    "full": "Currículo completo (PDF) ↓"
+  },
+  "nav": {
+    "work": "Trabalhos",
+    "stack": "Stack",
+    "exp": "Experiência",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+  "hero": {
+    "name": "Tamires Manhães",
+    "badge": "Engenheira de Software",
+    "focus": "full stack, frontend primeiro, IA",
+    "h1": "Construo produtos,<br><em>e os padrões</em><br>que mantêm times afinados.",
+    "lede": "Engenheira de software com mais de 5 anos entregando produtos web em fintech, saúde e SaaS. Trabalho na stack inteira com TypeScript, React e Node, lidero arquitetura e CI/CD para times de produto e integro LLMs em interfaces reais. Frontend é minha especialidade, não meu teto.",
+    "ctaWork": "Ver meus trabalhos",
+    "ctaTalk": "Fale comigo",
+    "terminal": {
+      "prompt": "whoami",
+      "role": "engenheira de software",
+      "focus": "frontend, full stack, IA",
+      "stack": "TypeScript, React, Next.js, Node, Fastify, PostgreSQL",
+      "based": "Salvador, BR (UTC−3), remoto",
+      "now": "construindo o próximo portfólio"
+    },
+    "stats": [
+      { "value": "5+", "label": "anos entregando produtos web" },
+      { "value": "3", "label": "design systems liderados ou iniciados" },
+      { "value": "8", "label": "empresas, de fintech a saúde" },
+      { "value": "TS", "label": "de ponta a ponta, front e back" }
+    ]
+  },
+  "work": {
+    "kicker": "01 — Trabalhos",
+    "title": "Trabalhos selecionados",
+    "intro": "Projetos que desenhei e construí por conta própria: arquitetura, controle de acesso e sistemas de componentes.",
+    "github": "github.com/tamires-manhaes ↗",
+    "code": "Código no GitHub ↗",
+    "case": "Ler o estudo de caso",
+    "projects": [
+      {
+        "id": "adopets",
+        "num": "01",
+        "title": "Adopets",
+        "tag": "Uma rede de pet shops, modelada de ponta a ponta.",
+        "desc": "Plataforma full stack para redes de pet shops: lojas agrupadas em redes, acesso por papel em cada loja, clientes e seus animais, consultas veterinárias, estoque e vendas. Web, docs e API vivem num monorepo e compartilham um único pacote de UI.",
+        "stack": "Turborepo, React, Fastify, Prisma, Zod, JWT, Docker",
+        "tech": "turborepo react fastify prisma zod docker typescript",
+        "githubUrl": "https://github.com/tamires-manhaes/adopets-monorepo",
+        "schema": [
+          "apps/",
+          "web · docs · server",
+          "packages/",
+          "@adopets/ui",
+          "eslint-config · ts-config"
+        ]
+      },
+      {
+        "id": "saas-rbac",
+        "num": "02",
+        "title": "saas-rbac",
+        "tag": "Multi-tenant, com permissões que se sustentam.",
+        "desc": "Base para SaaS multi-tenant: login por e-mail ou GitHub, recuperação de senha, organizações, convites, cobrança por projeto e quatro papéis com uma tabela de permissões aplicada na API e na interface.",
+        "stack": "Turborepo, Next.js, Fastify, Prisma, PostgreSQL, React Query",
+        "tech": "turborepo nextjs react fastify prisma postgresql typescript react-query",
+        "githubUrl": "https://github.com/tamires-manhaes/saas-rbac",
+        "schema": [
+          "can(role, action, subject)",
+          "admin ✓ invite member",
+          "member ✕ update role",
+          "billing ✓ export billing"
+        ]
+      },
+      {
+        "id": "p1menta-ui",
+        "num": "03",
+        "title": "p1menta UI",
+        "tag": "Um design system pequeno, documentado.",
+        "desc": "Biblioteca de componentes sobre primitivas do Radix e Tailwind, documentada no Storybook e publicada no Chromatic para revisão visual: botões, selects, switches, alertas e tags.",
+        "stack": "Vite, React, Radix, Tailwind, Storybook, Chromatic",
+        "tech": "vite react radix tailwind storybook chromatic typescript",
+        "githubUrl": "https://github.com/tamires-manhaes/p1menta-ui",
+        "schema": [
+          "components/",
+          "Button · Select · Switch",
+          "Alert · Badge · Tag",
+          "Checkbox · Textarea",
+          "stories → chromatic ✓"
+        ]
+      },
+      {
+        "id": "markfly",
+        "num": "04",
+        "title": "Mark.fly",
+        "tag": "Favoritos, em três idiomas.",
+        "desc": "Gerenciador de favoritos com categorias, fixação e prévia de links, traduzido para português, inglês e espanhol, com temas claro e escuro e layout que se adapta do celular ao desktop.",
+        "stack": "React, Vite, TypeScript, shadcn/ui, i18n",
+        "tech": "react vite typescript shadcn",
+        "githubUrl": "https://github.com/tamires-manhaes/markfly-app",
+        "schema": [
+          "pt-BR · en · es",
+          "◐ light / dark",
+          "⌖ pinned · # categories"
+        ]
+      }
+    ]
+  },
+  "stack": {
+    "kicker": "02 — Stack",
+    "title": "Com o que trabalho",
+    "note": "Escolha uma ferramenta para ver quais projetos a usam.",
+    "filter": {
+      "single": "{{count}} projeto usa {{tech}}.",
+      "multiple": "{{count}} projetos usam {{tech}}.",
+      "none": "Nenhum projeto aqui usa {{tech}} ainda.",
+      "clear": "Mostrar todos"
+    },
+    "columns": [
+      {
+        "title": "Frontend",
+        "items": [
+          { "label": "TypeScript", "tech": "typescript" },
+          { "label": "React 19", "tech": "react" },
+          { "label": "Next.js", "tech": "nextjs" },
+          { "label": "Vite", "tech": "vite" },
+          { "label": "Tailwind v4", "tech": "tailwind" },
+          { "label": "Radix", "tech": "radix" },
+          { "label": "shadcn/ui", "tech": "shadcn" },
+          { "label": "React Query", "tech": "react-query" }
+        ]
+      },
+      {
+        "title": "Backend",
+        "items": [
+          { "label": "Node.js" },
+          { "label": "Fastify", "tech": "fastify" },
+          { "label": "tRPC" },
+          { "label": "REST" },
+          { "label": "GraphQL" },
+          { "label": "Prisma", "tech": "prisma" },
+          { "label": "Drizzle" },
+          { "label": "Zod", "tech": "zod" },
+          { "label": "PostgreSQL", "tech": "postgresql" },
+          { "label": "MongoDB" }
+        ]
+      },
+      {
+        "title": "IA",
+        "items": [
+          { "label": "Integração com LLMs" },
+          { "label": "Streaming via SSE" },
+          { "label": "Orquestração multiagente" }
+        ]
+      },
+      {
+        "title": "Plataforma",
+        "items": [
+          { "label": "Turborepo", "tech": "turborepo" },
+          { "label": "pnpm" },
+          { "label": "Docker", "tech": "docker" },
+          { "label": "Nginx" },
+          { "label": "GitHub Actions CI/CD" },
+          { "label": "Azure AD SSO" }
+        ]
+      },
+      {
+        "title": "Qualidade",
+        "items": [
+          { "label": "Vitest" },
+          { "label": "Jest" },
+          { "label": "Testing Library" },
+          { "label": "Playwright" },
+          { "label": "Storybook", "tech": "storybook" },
+          { "label": "Chromatic", "tech": "chromatic" }
+        ]
+      }
+    ]
+  },
+  "thread": {
+    "kicker": "03 — O fio",
+    "title": "Quatro empresas, um trabalho recorrente: <em>dar aos times um sistema sobre o qual construir.</em>",
+    "items": [
+      {
+        "year": "2021–22",
+        "company": "Conexa Saúde",
+        "desc": "Liderei o primeiro design system e a biblioteca de componentes da empresa."
+      },
+      {
+        "year": "2022–23",
+        "company": "Devpass",
+        "desc": "Iniciei o design system; referência técnica de frontend."
+      },
+      {
+        "year": "2023–24",
+        "company": "Zig",
+        "desc": "Escalei uma biblioteca de componentes para vários produtos."
+      },
+      {
+        "year": "2025–hoje",
+        "company": "Nodian",
+        "desc": "Dos componentes à plataforma inteira: monorepo, CI/CD, infra."
+      }
+    ]
+  },
+  "experience": {
+    "kicker": "04 — Experiência",
+    "title": "Experiência",
+    "items": [
+      {
+        "period": "2025 – atual",
+        "company": "Nodian",
+        "role": "Software Engineer",
+        "desc": "Liderança de arquitetura e full stack em produtos de dados de saúde, IA e RH."
+      },
+      {
+        "period": "2024 – 2025",
+        "company": "Aarin",
+        "role": "Software Engineer",
+        "desc": "Plataforma de recuperação de crédito do Bradesco: portais do operador e do cliente."
+      },
+      {
+        "period": "2023 – 2024",
+        "company": "Zig",
+        "role": "Software Engineer",
+        "desc": "Biblioteca de componentes compartilhada por todos os produtos internos."
+      },
+      {
+        "period": "2022 – 2023",
+        "company": "Devpass",
+        "role": "Software Engineer",
+        "desc": "Referência de frontend: dashboards SaaS, design system, SEO de landing pages."
+      },
+      {
+        "period": "2021 – 2022",
+        "company": "Conexa Saúde",
+        "role": "Software Engineer",
+        "desc": "Liderei o design system e a biblioteca de componentes."
+      },
+      {
+        "period": "2019 – 2021",
+        "company": "Sambatech, Cubos, IWWA",
+        "role": "",
+        "desc": "Onde tudo começou: produtos em React, projetos para clientes, web full stack."
+      }
+    ]
+  },
+  "about": {
+    "kicker": "05 — Sobre",
+    "title": "Engenharia, estética <em>e o ringue.</em>",
+    "body": "Gosto de resolver o difícil de forma simples e de entender o porquê antes do quê. Longe do teclado, treino muay thai, nado e corro, e estou aprendendo mecatrônica e robótica em público. A mesma disciplina, em outra superfície.",
+    "pillars": [
+      {
+        "i": "i",
+        "title": "Sistemas",
+        "desc": "Produtos e os padrões por baixo deles."
+      },
+      {
+        "i": "ii",
+        "title": "Ofício",
+        "desc": "Olhar de designer para o detalhe."
+      },
+      {
+        "i": "iii",
+        "title": "Disciplina",
+        "desc": "Aparecer todo dia, no corpo e no código."
+      },
+      {
+        "i": "iv",
+        "title": "Curiosidade",
+        "desc": "Robôs, ciência, livros, música."
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "06 — Contato",
+    "title": "Construindo algo? <em>Vamos conversar.</em>",
+    "body": "Vagas, colaborações ou uma boa pergunta. Respondo em poucos dias.",
+    "email": "tamiresmanhaes4@gmail.com",
+    "copy": "Copiar",
+    "copied": "E-mail copiado",
+    "copyFail": "Não foi possível copiar. Selecione o endereço e copie manualmente.",
+    "form": {
+      "title": "Enviar uma mensagem",
+      "name": "Nome",
+      "email": "E-mail",
+      "topic": "Assunto",
+      "topicOptions": [
+        { "value": "role", "label": "Uma vaga no seu time" },
+        { "value": "project", "label": "Um projeto ou colaboração" },
+        { "value": "hi", "label": "Só passando para dizer oi" }
+      ],
+      "message": "Mensagem",
+      "placeholder": "O que você está construindo?",
+      "send": "Enviar mensagem",
+      "errors": {
+        "name": "Adicione seu nome para eu saber quem está escrevendo.",
+        "email": "Adicione um e-mail como voce@empresa.com para eu poder responder.",
+        "message": "Escreva uma mensagem curta antes de enviar."
+      },
+      "sent": "Seu app de e-mail abriu com a mensagem pronta. Clique em enviar lá para entregá-la."
+    },
+    "social": {
+      "linkedin": "LinkedIn ↗",
+      "github": "GitHub ↗"
+    }
+  },
+  "footer": {
+    "sig": "Técnica, estética e ringue: a mesma pessoa.",
+    "copy": "© {{year}} Tamires Manhães, Salvador, BR"
+  },
+  "case": {
+    "back": "← Todos os trabalhos",
+    "kicker": "Estudo de caso, projeto pessoal",
+    "adopets": {
+      "title": "Adopets",
+      "sub": "Uma plataforma para redes de pet shops, do banco de dados à UI compartilhada.",
+      "specs": {
+        "role": {
+          "label": "Papel",
+          "value": "Solo: produto, design, full stack"
+        },
+        "scope": {
+          "label": "Escopo",
+          "value": "Auth, papéis, lojas, clínica, vendas"
+        },
+        "stack": {
+          "label": "Stack",
+          "value": "Turborepo, React, Fastify, Prisma"
+        },
+        "code": { "label": "Código", "value": "adopets-monorepo ↗" }
+      },
+      "why": {
+        "kicker": "Por que construir",
+        "title": "Por que construir",
+        "p1": "Um pet shop é mais que uma loja: vende produtos, controla estoque, agenda o veterinário e lembra de cada animal. Uma rede multiplica isso por cada unidade, e cada pessoa deve ver só o que seu papel e sua loja permitem.",
+        "p2": "Queria praticar limites de monorepo, modelagem de permissões e um pacote de UI compartilhado num domínio que parece real."
+      },
+      "arch": {
+        "kicker": "Arquitetura",
+        "title": "Três apps, uma fonte de verdade.",
+        "boxes": [
+          {
+            "label": "apps/web",
+            "value": "Interface React: store, services, rotas"
+          },
+          { "label": "apps/docs", "value": "Documentação em Next.js" },
+          {
+            "label": "apps/server",
+            "value": "API REST com Fastify e Prisma, auth JWT"
+          }
+        ],
+        "arrow": "▲ os três importam de ▼",
+        "shared": [
+          {
+            "label": "packages/ui",
+            "value": "@adopets/ui, componentes compartilhados"
+          },
+          { "label": "packages/eslint-config", "value": "um padrão de lint" },
+          {
+            "label": "packages/typescript-config",
+            "value": "uma base de tsconfig"
+          }
+        ]
+      },
+      "access": {
+        "kicker": "Modelo de acesso",
+        "title": "Quem vê o quê, e onde.",
+        "chain": [
+          { "label": "rede", "value": "uma rede ou franquia" },
+          { "label": "loja", "value": "estoque, vendas, clínica" },
+          { "label": "papel por loja", "value": "SUPERADMIN, ADMIN, EMPLOYEE" }
+        ],
+        "body": "Os papéis são verificados no middleware: a loja vem do token, e um helper de permissão decide o que cada papel pode fazer em cada recurso."
+      },
+      "decisions": {
+        "kicker": "Decisões",
+        "title": "O porquê por trás da forma.",
+        "items": [
+          {
+            "title": "Um monorepo para uma pessoa",
+            "body": "Tipos, UI e config compartilhados entre web e API mantêm o código consistente. Turborepo deixa builds e tarefas rápidas mesmo solo.",
+            "trade": "trade-off: mais tooling inicial"
+          },
+          {
+            "title": "Papéis vivem na loja, não no usuário",
+            "body": "Uma pessoa pode ser ADMIN numa loja e EMPLOYEE em outra, então a tabela de junção é papel × loja × usuário. Isso reflete melhor o negócio do que um papel global.",
+            "trade": "trade-off: queries de auth mais complexas"
+          },
+          {
+            "title": "Validar na borda",
+            "body": "Zod valida toda entrada de rota e o ambiente. Falhas viram erros de tipo antes de surpresas em runtime.",
+            "trade": "trade-off: schemas mais rígidos para manter"
+          },
+          {
+            "title": "Rotas por domínio",
+            "body": "As rotas são agrupadas por domínio — auth, user, product, transaction — em vez de por camada técnica, então a API lê como o produto."
+          }
+        ]
+      },
+      "next": {
+        "kicker": "O que eu faria a seguir",
+        "body": "Adicionar um log de auditoria nas vendas, expor uma demo no ar e aumentar a cobertura de testes na camada de permissões. Mostrar as lacunas faz parte do trabalho sênior."
+      },
+      "quote": "A parte mais difícil não foi o schema; foi decidir quem pode ver qual linha.",
+      "nextProject": "Próximo: <em>saas-rbac</em> ↗",
+      "nextUrl": "https://github.com/tamires-manhaes/saas-rbac"
+    }
+  },
+  "menu": {
+    "open": "Abrir menu",
+    "close": "Fechar menu"
+  },
+  "theme": {
+    "toLight": "Mudar para tema claro",
+    "toDark": "Mudar para tema escuro"
+  },
+  "lang": {
+    "toPT": "Mudar idioma para português",
+    "toEN": "Mudar idioma para inglês"
+  }
+}

@@ -1,0 +1,425 @@
+{
+  "skip": "Skip to content",
+  "role": "Software Engineer",
+  "focus": "full stack, frontend-first, AI",
+  "brand": "tamires.dev",
+  "cv": {
+    "btn": "Résumé (PDF)",
+    "full": "Full résumé (PDF) ↓"
+  },
+  "nav": {
+    "work": "Work",
+    "stack": "Stack",
+    "exp": "Experience",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "Tamires Manhães",
+    "badge": "Software Engineer",
+    "focus": "full stack, frontend-first, AI",
+    "h1": "I build products,<br><em>and the standards</em><br>that keep teams in tune.",
+    "lede": "Software engineer with 5+ years shipping web products in fintech, healthcare and SaaS. I work across the stack in TypeScript, React and Node, lead architecture and CI/CD for product teams, and integrate LLMs into real interfaces. Frontend is my specialty, not my ceiling.",
+    "ctaWork": "See my work",
+    "ctaTalk": "Get in touch",
+    "terminal": {
+      "prompt": "whoami",
+      "role": "software engineer",
+      "focus": "frontend, full stack, AI",
+      "stack": "TypeScript, React, Next.js, Node, Fastify, PostgreSQL",
+      "based": "Salvador, BR (UTC−3), remote",
+      "now": "building the next portfolio"
+    },
+    "stats": [
+      { "value": "5+", "label": "years shipping web products" },
+      { "value": "3", "label": "design systems led or started" },
+      { "value": "8", "label": "companies, fintech to healthcare" },
+      { "value": "TS", "label": "end to end, front to back" }
+    ]
+  },
+  "work": {
+    "kicker": "01 — Work",
+    "title": "Selected work",
+    "intro": "Projects I designed and built on my own time: architecture, access control and component systems.",
+    "github": "github.com/tamires-manhaes ↗",
+    "code": "Code on GitHub ↗",
+    "case": "Read the case study",
+    "projects": [
+      {
+        "id": "adopets",
+        "num": "01",
+        "title": "Adopets",
+        "tag": "A pet-store network, modeled end to end.",
+        "desc": "A full-stack platform for pet-store chains: stores grouped into networks, role-based access per store, clients and their animals, vet consultations, stock and sales. Web, docs and API live in one monorepo and share a single UI package.",
+        "stack": "Turborepo, React, Fastify, Prisma, Zod, JWT, Docker",
+        "tech": "turborepo react fastify prisma zod docker typescript",
+        "githubUrl": "https://github.com/tamires-manhaes/adopets-monorepo",
+        "schema": [
+          "apps/",
+          "web · docs · server",
+          "packages/",
+          "@adopets/ui",
+          "eslint-config · ts-config"
+        ]
+      },
+      {
+        "id": "saas-rbac",
+        "num": "02",
+        "title": "saas-rbac",
+        "tag": "Multi-tenant, with permissions that hold.",
+        "desc": "A foundation for multi-tenant SaaS: sign-in by e-mail or GitHub, password recovery, organizations, invites, per-project billing and four roles with a permission table enforced on both API and interface.",
+        "stack": "Turborepo, Next.js, Fastify, Prisma, PostgreSQL, React Query",
+        "tech": "turborepo nextjs react fastify prisma postgresql typescript react-query",
+        "githubUrl": "https://github.com/tamires-manhaes/saas-rbac",
+        "schema": [
+          "can(role, action, subject)",
+          "admin ✓ invite member",
+          "member ✕ update role",
+          "billing ✓ export billing"
+        ]
+      },
+      {
+        "id": "p1menta-ui",
+        "num": "03",
+        "title": "p1menta UI",
+        "tag": "A small design system, documented.",
+        "desc": "A component library built on Radix primitives and Tailwind, documented in Storybook and published to Chromatic for visual review: buttons, selects, switches, alerts and tags.",
+        "stack": "Vite, React, Radix, Tailwind, Storybook, Chromatic",
+        "tech": "vite react radix tailwind storybook chromatic typescript",
+        "githubUrl": "https://github.com/tamires-manhaes/p1menta-ui",
+        "schema": [
+          "components/",
+          "Button · Select · Switch",
+          "Alert · Badge · Tag",
+          "Checkbox · Textarea",
+          "stories → chromatic ✓"
+        ]
+      },
+      {
+        "id": "markfly",
+        "num": "04",
+        "title": "Mark.fly",
+        "tag": "Bookmarks, in three languages.",
+        "desc": "A bookmark manager with categories, pinning and link previews, translated into Portuguese, English and Spanish, with light and dark themes and a layout that adapts from phone to desktop.",
+        "stack": "React, Vite, TypeScript, shadcn/ui, i18n",
+        "tech": "react vite typescript shadcn",
+        "githubUrl": "https://github.com/tamires-manhaes/markfly-app",
+        "schema": [
+          "pt-BR · en · es",
+          "◐ light / dark",
+          "⌖ pinned · # categories"
+        ]
+      }
+    ]
+  },
+  "stack": {
+    "kicker": "02 — Stack",
+    "title": "What I work with",
+    "note": "Pick a tool to see which projects use it.",
+    "filter": {
+      "single": "{{count}} project uses {{tech}}.",
+      "multiple": "{{count}} projects use {{tech}}.",
+      "none": "No projects here use {{tech}} yet.",
+      "clear": "Show all"
+    },
+    "columns": [
+      {
+        "title": "Frontend",
+        "items": [
+          { "label": "TypeScript", "tech": "typescript" },
+          { "label": "React 19", "tech": "react" },
+          { "label": "Next.js", "tech": "nextjs" },
+          { "label": "Vite", "tech": "vite" },
+          { "label": "Tailwind v4", "tech": "tailwind" },
+          { "label": "Radix", "tech": "radix" },
+          { "label": "shadcn/ui", "tech": "shadcn" },
+          { "label": "React Query", "tech": "react-query" }
+        ]
+      },
+      {
+        "title": "Backend",
+        "items": [
+          { "label": "Node.js" },
+          { "label": "Fastify", "tech": "fastify" },
+          { "label": "tRPC" },
+          { "label": "REST" },
+          { "label": "GraphQL" },
+          { "label": "Prisma", "tech": "prisma" },
+          { "label": "Drizzle" },
+          { "label": "Zod", "tech": "zod" },
+          { "label": "PostgreSQL", "tech": "postgresql" },
+          { "label": "MongoDB" }
+        ]
+      },
+      {
+        "title": "AI",
+        "items": [
+          { "label": "LLM integration" },
+          { "label": "SSE streaming" },
+          { "label": "Multi-agent orchestration" }
+        ]
+      },
+      {
+        "title": "Platform",
+        "items": [
+          { "label": "Turborepo", "tech": "turborepo" },
+          { "label": "pnpm" },
+          { "label": "Docker", "tech": "docker" },
+          { "label": "Nginx" },
+          { "label": "GitHub Actions CI/CD" },
+          { "label": "Azure AD SSO" }
+        ]
+      },
+      {
+        "title": "Quality",
+        "items": [
+          { "label": "Vitest" },
+          { "label": "Jest" },
+          { "label": "Testing Library" },
+          { "label": "Playwright" },
+          { "label": "Storybook", "tech": "storybook" },
+          { "label": "Chromatic", "tech": "chromatic" }
+        ]
+      }
+    ]
+  },
+  "thread": {
+    "kicker": "03 — The thread",
+    "title": "Four companies, one recurring job: <em>giving teams a system to build on.</em>",
+    "items": [
+      {
+        "year": "2021–22",
+        "company": "Conexa Saúde",
+        "desc": "Led the company’s first design system and component library."
+      },
+      {
+        "year": "2022–23",
+        "company": "Devpass",
+        "desc": "Started the design system; frontend technical reference."
+      },
+      {
+        "year": "2023–24",
+        "company": "Zig",
+        "desc": "Scaled one component library across several products."
+      },
+      {
+        "year": "2025–now",
+        "company": "Nodian",
+        "desc": "From components to the whole platform: monorepo, CI/CD, infra."
+      }
+    ]
+  },
+  "experience": {
+    "kicker": "04 — Experience",
+    "title": "Experience",
+    "items": [
+      {
+        "period": "2025 – present",
+        "company": "Nodian",
+        "role": "Software Engineer",
+        "desc": "Architecture and full-stack lead across health-data, AI and HR products."
+      },
+      {
+        "period": "2024 – 2025",
+        "company": "Aarin",
+        "role": "Software Engineer",
+        "desc": "Bradesco credit-recovery platform: operator and customer portals."
+      },
+      {
+        "period": "2023 – 2024",
+        "company": "Zig",
+        "role": "Software Engineer",
+        "desc": "Shared component library for every internal product."
+      },
+      {
+        "period": "2022 – 2023",
+        "company": "Devpass",
+        "role": "Software Engineer",
+        "desc": "Frontend reference: SaaS dashboards, design system, landing-page SEO."
+      },
+      {
+        "period": "2021 – 2022",
+        "company": "Conexa Saúde",
+        "role": "Software Engineer",
+        "desc": "Led the design system and component library."
+      },
+      {
+        "period": "2019 – 2021",
+        "company": "Sambatech, Cubos, IWWA",
+        "role": "",
+        "desc": "Where it started: React products, client work, full-stack web."
+      }
+    ]
+  },
+  "about": {
+    "kicker": "05 — About",
+    "title": "Engineering, aesthetics <em>and the ring.</em>",
+    "body": "I like solving the hard thing simply, and understanding the why before the what. Off the keyboard I train muay thai, swim and run, and I’m learning mechatronics and robotics in public. Same discipline, different surface.",
+    "pillars": [
+      {
+        "i": "i",
+        "title": "Systems",
+        "desc": "Products and the standards under them."
+      },
+      {
+        "i": "ii",
+        "title": "Craft",
+        "desc": "A designer’s eye for the detail."
+      },
+      {
+        "i": "iii",
+        "title": "Discipline",
+        "desc": "Show up every day, body and code."
+      },
+      {
+        "i": "iv",
+        "title": "Curiosity",
+        "desc": "Robots, science, books, music."
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "06 — Contact",
+    "title": "Building something? <em>Let’s talk.</em>",
+    "body": "Roles, collaborations or a good question. I reply within a few days.",
+    "email": "tamiresmanhaes4@gmail.com",
+    "copy": "Copy",
+    "copied": "Email copied",
+    "copyFail": "Couldn’t copy. Select the address and copy it manually.",
+    "form": {
+      "title": "Send a message",
+      "name": "Name",
+      "email": "Email",
+      "topic": "About",
+      "topicOptions": [
+        { "value": "role", "label": "A role on your team" },
+        { "value": "project", "label": "A project or collaboration" },
+        { "value": "hi", "label": "Just saying hi" }
+      ],
+      "message": "Message",
+      "placeholder": "What are you building?",
+      "send": "Send message",
+      "errors": {
+        "name": "Add your name so I know who’s writing.",
+        "email": "Add an email address like you@company.com so I can reply.",
+        "message": "Write a short message before sending."
+      },
+      "sent": "Your mail app is open with the message ready. Press send there to deliver it."
+    },
+    "social": {
+      "linkedin": "LinkedIn ↗",
+      "github": "GitHub ↗"
+    }
+  },
+  "footer": {
+    "sig": "Technique, aesthetics and the ring: the same person.",
+    "copy": "© {{year}} Tamires Manhães, Salvador, BR"
+  },
+  "case": {
+    "back": "← All work",
+    "kicker": "Case study, personal project",
+    "adopets": {
+      "title": "Adopets",
+      "sub": "A platform for pet-store networks, from the database to the shared UI.",
+      "specs": {
+        "role": {
+          "label": "Role",
+          "value": "Solo: product, design, full stack"
+        },
+        "scope": {
+          "label": "Scope",
+          "value": "Auth, roles, stores, clinic, sales"
+        },
+        "stack": {
+          "label": "Stack",
+          "value": "Turborepo, React, Fastify, Prisma"
+        },
+        "code": { "label": "Code", "value": "adopets-monorepo ↗" }
+      },
+      "why": {
+        "kicker": "Why build it",
+        "title": "Why build it",
+        "p1": "A pet store is more than a shop: it sells products, keeps stock, books the vet and remembers every animal. A chain multiplies that by every location, and each person should see only what their role and store allow.",
+        "p2": "I wanted to practice monorepo boundaries, permission modeling and a shared UI package in a domain that feels real."
+      },
+      "arch": {
+        "kicker": "Architecture",
+        "title": "Three apps, one source of truth.",
+        "boxes": [
+          {
+            "label": "apps/web",
+            "value": "React interface: store, services, routes"
+          },
+          { "label": "apps/docs", "value": "Next.js documentation" },
+          {
+            "label": "apps/server",
+            "value": "Fastify and Prisma REST API, JWT auth"
+          }
+        ],
+        "arrow": "▲ all three import from ▼",
+        "shared": [
+          { "label": "packages/ui", "value": "@adopets/ui, shared components" },
+          { "label": "packages/eslint-config", "value": "one lint standard" },
+          {
+            "label": "packages/typescript-config",
+            "value": "one tsconfig base"
+          }
+        ]
+      },
+      "access": {
+        "kicker": "Access model",
+        "title": "Who sees what, and where.",
+        "chain": [
+          { "label": "network", "value": "a chain or franchise" },
+          { "label": "store", "value": "stock, sales, clinic" },
+          { "label": "role per store", "value": "SUPERADMIN, ADMIN, EMPLOYEE" }
+        ],
+        "body": "Roles are checked in middleware: the store comes from the token, and a permission helper decides what each role can do on each resource."
+      },
+      "decisions": {
+        "kicker": "Decisions",
+        "title": "The why behind the shape.",
+        "items": [
+          {
+            "title": "A monorepo for one person",
+            "body": "Shared types, UI and config between web and API keep the codebase consistent. Turborepo makes builds and tasks fast even solo.",
+            "trade": "trade-off: more upfront tooling"
+          },
+          {
+            "title": "Roles live on the store, not the user",
+            "body": "A person can be ADMIN in one store and EMPLOYEE in another, so the join table is role × store × user. This matches the business better than a global role.",
+            "trade": "trade-off: more complex auth queries"
+          },
+          {
+            "title": "Validate at the edge",
+            "body": "Zod validates every route input and the environment. Failures become type errors before runtime surprises.",
+            "trade": "trade-off: stricter schemas to maintain"
+          },
+          {
+            "title": "Domain-shaped routes",
+            "body": "Routes are grouped by domain — auth, user, product, transaction — instead of by technical layer, so the API reads like the product."
+          }
+        ]
+      },
+      "next": {
+        "kicker": "What I’d do next",
+        "body": "Add an audit log for sales, expose a live demo and raise test coverage for the permission layer. Showing the gaps is part of senior work."
+      },
+      "quote": "The hardest part was not the schema; it was deciding who gets to see which row.",
+      "nextProject": "Next: <em>saas-rbac</em> ↗",
+      "nextUrl": "https://github.com/tamires-manhaes/saas-rbac"
+    }
+  },
+  "menu": {
+    "open": "Open menu",
+    "close": "Close menu"
+  },
+  "theme": {
+    "toLight": "Switch to light theme",
+    "toDark": "Switch to dark theme"
+  },
+  "lang": {
+    "toPT": "Switch language to Portuguese",
+    "toEN": "Switch language to English"
+  }
+}

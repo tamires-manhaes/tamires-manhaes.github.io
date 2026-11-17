@@ -1,95 +1,184 @@
 'use client';
-import { Button } from '@/components/Button';
-import { Input } from '@/components/Input';
-import { Textarea } from '@/components/Textarea';
+
+import { useI18n } from '@/components/providers/i18n-provider';
+import { useToast } from '@/components/providers/toast-provider';
 import { useContact } from '@/hooks/use-contact';
 import { Loader2 } from 'lucide-react';
-import content from '@/contents/AboutMeContent.json';
-import { useIconsDict } from '@/hooks/use-icons-dict';
-import { Badge } from '@/components/Badge';
 
-export default function ContactForm() {
-  const { handleChange, handleSubmit, formData, isLoading } = useContact();
-  const { fetchIcon } = useIconsDict();
+export default function Contact() {
+  const { t, locale } = useI18n();
+  const { show } = useToast();
+  const { formData, handleChange, handleSubmit, isLoading, status } =
+    useContact(
+      () => show(t.contact.form.sent),
+      (msg) => show(msg),
+    );
+
+  const emailPlaceholder =
+    locale === 'pt' ? 'voce@empresa.com' : 'you@company.com';
+
+  const cvUrl =
+    locale === 'pt'
+      ? '/Tamires_Manhaes_CV_2026_pt.pdf'
+      : '/Tamires_Manhaes_CV_2026_en.pdf';
+
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(t.contact.email);
+      show(t.contact.copied);
+    } catch {
+      show(t.contact.copyFail);
+    }
+  };
+
   return (
-    <section id="contact" className="py-8 flex justify-center content-center">
-      <div className=" w-[80vw] md:w-[60vw]">
-        <div className="mx-auto">
-          <h2 className="text-2xl text-center placeholder:font-bold mb-4 dark:text-textColor">
-            <Badge fontSize="20px">Get in touch</Badge>
-          </h2>
-          <span className="block text-lg text-center mx-12">
-            {content.contactMe.descripton}
-          </span>
-        </div>
-        <form onSubmit={handleSubmit} className="max-w-md mx-auto py-12">
-          <div className="mb-4">
-            <label htmlFor="name" className="block mb-2 dark:text-textColor">
-              Name
-            </label>
-            <Input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-              className="bg-white dark:bg-boxBackground text-gray-900 dark:text-textColor"
+    <section id="contact" className="py-24">
+      <div className="wrap px-7">
+        <div className="contact grid grid-cols-1 gap-14 border-t border-dashed border-gold pt-16 lg:grid-cols-[1fr_1.1fr]">
+          <div>
+            <p className="kicker">{t.contact.kicker}</p>
+            <h2
+              className="font-serif text-[clamp(36px,4.4vw,56px)] font-medium leading-tight tracking-tight"
+              dangerouslySetInnerHTML={{ __html: t.contact.title }}
             />
+            <p className="body mt-5 max-w-[420px] text-soft">
+              {t.contact.body}
+            </p>
+            <div className="mail-row mt-7 flex flex-wrap items-center gap-3">
+              <a
+                href={`mailto:${t.contact.email}`}
+                className="mail border-b border-gold py-1 font-mono text-[15px] break-all"
+              >
+                {t.contact.email}
+              </a>
+              <button
+                type="button"
+                onClick={copy}
+                className="icon-btn font-mono text-sm text-soft"
+              >
+                {t.contact.copy}
+              </button>
+            </div>
+            <div className="social mt-4 flex flex-wrap gap-x-7 gap-y-2 text-[15px] text-soft">
+              <a
+                href="https://linkedin.com/in/tamires-manhaes"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="py-2 hover:text-foreground"
+              >
+                {t.contact.social.linkedin}
+              </a>
+              <a
+                href="https://github.com/tamires-manhaes"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="py-2 hover:text-foreground"
+              >
+                {t.contact.social.github}
+              </a>
+              <a href={cvUrl} download className="py-2 hover:text-foreground">
+                {t.cv.btn}
+              </a>
+            </div>
           </div>
-          <div className="mb-4">
-            <label htmlFor="email" className="block mb-2 dark:text-textColor">
-              Email
-            </label>
-            <Input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-              className="bg-white dark:bg-boxBackground text-gray-900 dark:text-textColor"
-            />
-          </div>
-          <div className="mb-4">
-            <label htmlFor="message" className="block mb-2 dark:text-textColor">
-              Message
-            </label>
-            <Textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              required
-              className="bg-white dark:bg-boxBackground text-gray-900 dark:text-textColor"
-            />
-          </div>
-          <Button
-            type="submit"
-            className="bg-grey-300 text-chipText hover:bg-chipBg/90"
-            disabled={isLoading}
+
+          <form
+            onSubmit={handleSubmit}
+            noValidate
+            className="cf flex flex-col gap-5 rounded border border-hair bg-raise p-7 lg:p-8"
+            aria-labelledby="cf-title"
           >
-            {isLoading && <Loader2 className="animate-spin" />}
-            Send Message
-          </Button>
-        </form>
-        <div className="my-4 flex flex-col content-center justify-center">
-          <span className="text-center">
-            You may also find me on these platforms!
-          </span>
-          <ul className="flex justify-center text-center mt-2">
-            {content.contactMe.socialMedia.map((social) => {
-              return (
-                <li key={social.name} className="mx-2">
-                  <a href={social.url} target="_blank">
-                    {fetchIcon(social.name)}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
+            <h3 id="cf-title" className="sr-only">
+              {t.contact.form.title}
+            </h3>
+            <div className="two grid grid-cols-1 gap-5 md:grid-cols-2">
+              <Field label={t.contact.form.name}>
+                <input
+                  type="text"
+                  name="name"
+                  autoComplete="name"
+                  required
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="field-input"
+                />
+              </Field>
+              <Field label={t.contact.form.email}>
+                <input
+                  type="email"
+                  name="email"
+                  autoComplete="email"
+                  required
+                  placeholder={emailPlaceholder}
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="field-input"
+                />
+              </Field>
+            </div>
+            <Field label={t.contact.form.topic}>
+              <select
+                name="topic"
+                value={formData.topic}
+                onChange={handleChange}
+                className="field-input"
+              >
+                {t.contact.form.topicOptions.map((opt) => (
+                  <option key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </option>
+                ))}
+              </select>
+            </Field>
+            <Field label={t.contact.form.message}>
+              <textarea
+                name="message"
+                rows={5}
+                required
+                placeholder={t.contact.form.placeholder}
+                value={formData.message}
+                onChange={handleChange}
+                className="field-input min-h-[132px] resize-y"
+              />
+            </Field>
+            <div className="form-foot flex flex-wrap items-center gap-3">
+              <button
+                type="submit"
+                className="btn btn-gold"
+                disabled={isLoading}
+              >
+                {isLoading && <Loader2 className="h-4 w-4 animate-spin" />}
+                {t.contact.form.send}
+              </button>
+              {status && (
+                <p className="status text-sm text-olive" role="status">
+                  {status}
+                </p>
+              )}
+            </div>
+          </form>
         </div>
       </div>
     </section>
+  );
+}
+
+function Field({
+  label,
+  error,
+  children,
+}: {
+  label: string;
+  error?: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="field flex flex-col gap-2">
+      <label className="font-mono text-xs tracking-wide text-faint">
+        {label}
+      </label>
+      {children}
+      {error && <p className="text-sm text-terra">{error}</p>}
+    </div>
   );
 }

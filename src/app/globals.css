@@ -2,45 +2,162 @@
 @tailwind components;
 @tailwind utilities;
 
-@plugin "@tailwindcss/typography";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #f4eee3;
+    --foreground: #1f1913;
+    --sink: #ebe3d4;
+    --raise: #faf6ee;
+    --soft: #4f4234;
+    --faint: #6a5a47;
+    --hair: #d6cab3;
+    --gold: #7e5a1c;
+    --camel: #8a5a2b;
+    --on-gold: #faf6ee;
+    --terra: #a14e26;
+    --olive: #5f6230;
+    --muted: #a2927a;
+    --radius: 2px;
+  }
+
+  .dark {
+    --background: #211b16;
+    --foreground: #ede4d3;
+    --sink: #1a150f;
+    --raise: #2b241d;
+    --soft: #c9baa2;
+    --faint: #a2927a;
+    --hair: #4a3d2e;
+    --gold: #c9a259;
+    --camel: #d1a568;
+    --on-gold: #1a150f;
+    --terra: #c2683d;
+    --olive: #8f9055;
   }
 }
 
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  position: relative;
+@layer base {
+  * {
+    @apply border-hair;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 84px);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans), system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    overflow-x: hidden;
+    transition:
+      background-color 0.25s,
+      color 0.25s;
+  }
+
+  ::selection {
+    background: var(--gold);
+    color: var(--on-gold);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
 }
 
-body {
-  color: var(--foreground);
-  background: #030712;
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .wrap {
+    @apply mx-auto max-w-[1180px] px-7;
+  }
+
+  .kicker {
+    @apply mb-3 font-mono text-sm tracking-widest text-gold;
+  }
+
+  .section-head {
+    @apply flex flex-wrap items-baseline justify-between gap-3 border-b border-dashed border-gold pb-5;
+  }
+
+  .section-note {
+    @apply font-mono text-sm text-faint;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-[2px] px-6 py-3 text-[15px] font-semibold transition-transform active:translate-y-px;
+  }
+
+  .btn-small {
+    @apply min-h-11 px-4 py-2 text-sm font-medium;
+    border: 1px solid var(--gold);
+    color: var(--foreground);
+  }
+
+  .btn-gold {
+    @apply bg-gold text-on-gold hover:brightness-105;
+  }
+
+  .btn-line {
+    @apply border border-hair bg-transparent text-foreground hover:border-gold;
+  }
+
+  .icon-btn {
+    @apply inline-flex h-11 min-w-[44px] items-center justify-center rounded-[2px] border border-transparent px-2.5 text-soft transition-colors;
+  }
+
+  .icon-btn:hover {
+    @apply border-hair text-foreground;
+  }
+
+  .field-input {
+    @apply w-full rounded-[2px] border border-hair bg-background px-4 py-3 text-base text-foreground;
+  }
+
+  .field-input:focus {
+    @apply outline-none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 1px var(--gold);
+  }
+
+  .field-input[aria-invalid='true'] {
+    border-color: var(--terra);
+  }
+
+  .sr-only {
+    @apply absolute h-px w-px overflow-hidden whitespace-nowrap p-0;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  .skip-link {
+    @apply absolute left-3 top-[-60px] z-[100] rounded-[2px] bg-gold px-4 py-2.5 font-semibold text-on-gold;
+  }
+
+  .skip-link:focus {
+    top: 12px;
+  }
 }
 
-#root {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  overflow-x: hidden;
-}
+@layer utilities {
+  .font-serif {
+    font-family: var(--font-serif), Georgia, serif;
+  }
 
-[data-badges] {
-  @apply flex flex-row flex-wrap justify-center gap-2 p-1;
-}
+  .font-mono {
+    font-family: var(--font-mono), ui-monospace, monospace;
+  }
 
-[data-badges] > img {
-  @apply m-0;
+  .font-sans {
+    font-family: var(--font-sans), system-ui, sans-serif;
+  }
 }
